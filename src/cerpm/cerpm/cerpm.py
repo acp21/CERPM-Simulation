@@ -4,6 +4,8 @@ from rclpy.node import Node
 import pandas as pd
 from rclpy.publisher import Publisher
 from std_msgs.msg import String
+import random
+import time
 
 
 class Cerpm():
@@ -15,6 +17,7 @@ class Cerpm():
     
     def talk(self):
         msg = String()
+        time.sleep(random.randint(0,2))
         msg.data = 'Hello from cerpm: %d' % self.id
         self.publisher.publish(msg)
         print(f'Published message from cerpm {self.id}')
@@ -36,22 +39,36 @@ class CerpmCluster(Node):
         self.cerpms.append(cerpm)
     
     def timer_callback(self):
-        print('timer called')
         for cerpm in self.cerpms:
-            print('loop')
             cerpm.talk()
 
     def load_cerpms_from_file(self, file_path: str, generate_ids:bool=False):
         print(f'loading cerpms from csv {file_path}')
         if(generate_ids):
             print('Generate IDs set to true, ignoring ids in csv file')
-        
+        try:
+            df = pd.read_csv(file_path)
+        except FileNotFoundError:
+            print(f'File {file_path} not found!')
+        id = 0
+        print(df)
+        for row in df.itertuples(index=True, name='cerpms'):
+            print(row)  # Access the entire row
+            print('hi')
+            if generate_ids:
+                self.build_cerpm(id, row.x, row.y)
+                id += 1
+            else:
+                self.build_cerpm(row.id, row.x, row.y)
+        print(self.cerpms)
+
         
 
 def main(args=None):
     try:
         with rclpy.init(args=args):
             cerpm_cluster = CerpmCluster()
+            cerpm_cluster.load_cerpms_from_file('cerpm_list.csv', True)
             rclpy.spin(cerpm_cluster)
 
     except:
