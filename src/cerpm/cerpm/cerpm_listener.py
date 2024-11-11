@@ -5,6 +5,9 @@ from rclpy.subscription import Subscription
 
 from std_msgs.msg import String
 
+# String rep
+# id:x:y:
+
 class CerpmListener(Node):
     def __init__(self):
         super().__init__('cerpm_listener')
@@ -27,7 +30,18 @@ class CerpmListener(Node):
         self.get_logger().info('I heard %s' % msg.data)
 
     def heard_callback(self, msg):
-        new_subscription = self.create_subscription()
+        data = msg.data
+        split_data = data.split(':')
+        id = split_data[0] 
+        x = split_data[1]
+        y = split_data[2]
+        topic = f'cerpms/cerpm_{id}/talk'
+        # Create subscription to listen to a given cerpm
+        new_subscription = self.create_subscription(String,
+                                                    topic,
+                                                    self.listener_callback,
+                                                    10)
+
 
 def main(args=None):
     try:

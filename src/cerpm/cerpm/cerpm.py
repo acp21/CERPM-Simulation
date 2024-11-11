@@ -18,9 +18,10 @@ class Cerpm():
     def talk(self):
         msg = String()
         time.sleep(random.randint(0,2))
-        msg.data = 'Hello from cerpm: %d' % self.id
+        msg_str = f'{self.id}:{self.x}:{self.y}'
+        msg.data = msg_str
         self.publisher.publish(msg)
-        print(f'Published message from cerpm {self.id}')
+        print(f'CERPM {self.id} published talk')
 
 class CerpmCluster(Node):
 
