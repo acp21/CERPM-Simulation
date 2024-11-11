@@ -1,0 +1,26 @@
+[0.447s] Invoking command in '/home/acp/programming/rosdock/src/cerpm': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PYTHONPATH=/home/acp/programming/rosdock/build/cerpm/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/acp/programming/rosdock/install/cerpm/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py egg_info --egg-base ../../build/cerpm build --build-base /home/acp/programming/rosdock/build/cerpm/build install --record /home/acp/programming/rosdock/build/cerpm/install.log --single-version-externally-managed install_data
+[0.586s] running egg_info
+[0.595s] writing ../../build/cerpm/cerpm.egg-info/PKG-INFO
+[0.595s] writing dependency_links to ../../build/cerpm/cerpm.egg-info/dependency_links.txt
+[0.595s] writing entry points to ../../build/cerpm/cerpm.egg-info/entry_points.txt
+[0.595s] writing requirements to ../../build/cerpm/cerpm.egg-info/requires.txt
+[0.595s] writing top-level names to ../../build/cerpm/cerpm.egg-info/top_level.txt
+[0.617s] reading manifest file '../../build/cerpm/cerpm.egg-info/SOURCES.txt'
+[0.617s] adding license file 'LICENSE'
+[0.617s] writing manifest file '../../build/cerpm/cerpm.egg-info/SOURCES.txt'
+[0.617s] running build
+[0.617s] running build_py
+[0.618s] copying cerpm/cerpm.py -> /home/acp/programming/rosdock/build/cerpm/build/lib/cerpm
+[0.618s] running install
+[0.622s] running install_lib
+[0.631s] copying /home/acp/programming/rosdock/build/cerpm/build/lib/cerpm/cerpm.py -> /home/acp/programming/rosdock/install/cerpm/lib/python3.12/site-packages/cerpm
+[0.632s] byte-compiling /home/acp/programming/rosdock/install/cerpm/lib/python3.12/site-packages/cerpm/cerpm.py to cerpm.cpython-312.pyc
+[0.632s] running install_data
+[0.632s] running install_egg_info
+[0.643s] removing '/home/acp/programming/rosdock/install/cerpm/lib/python3.12/site-packages/cerpm-0.0.0-py3.12.egg-info' (and everything under it)
+[0.643s] Copying ../../build/cerpm/cerpm.egg-info to /home/acp/programming/rosdock/install/cerpm/lib/python3.12/site-packages/cerpm-0.0.0-py3.12.egg-info
+[0.643s] running install_scripts
+[0.715s] Installing listener script to /home/acp/programming/rosdock/install/cerpm/lib/cerpm
+[0.715s] Installing talker script to /home/acp/programming/rosdock/install/cerpm/lib/cerpm
+[0.715s] writing list of installed files to '/home/acp/programming/rosdock/build/cerpm/install.log'
+[0.735s] Invoked command in '/home/acp/programming/rosdock/src/cerpm' returned '0': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PYTHONPATH=/home/acp/programming/rosdock/build/cerpm/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/acp/programming/rosdock/install/cerpm/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py egg_info --egg-base ../../build/cerpm build --build-base /home/acp/programming/rosdock/build/cerpm/build install --record /home/acp/programming/rosdock/build/cerpm/install.log --single-version-externally-managed install_data

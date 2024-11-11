@@ -1,0 +1,40 @@
+running egg_info
+creating ../../build/cerpm/cerpm.egg-info
+writing ../../build/cerpm/cerpm.egg-info/PKG-INFO
+writing dependency_links to ../../build/cerpm/cerpm.egg-info/dependency_links.txt
+writing entry points to ../../build/cerpm/cerpm.egg-info/entry_points.txt
+writing requirements to ../../build/cerpm/cerpm.egg-info/requires.txt
+writing top-level names to ../../build/cerpm/cerpm.egg-info/top_level.txt
+writing manifest file '../../build/cerpm/cerpm.egg-info/SOURCES.txt'
+reading manifest file '../../build/cerpm/cerpm.egg-info/SOURCES.txt'
+adding license file 'LICENSE'
+writing manifest file '../../build/cerpm/cerpm.egg-info/SOURCES.txt'
+running build
+running build_py
+creating /home/acp/programming/rosdock/build/cerpm/build
+creating /home/acp/programming/rosdock/build/cerpm/build/lib
+creating /home/acp/programming/rosdock/build/cerpm/build/lib/cerpm
+copying cerpm/publisher_member_function.py -> /home/acp/programming/rosdock/build/cerpm/build/lib/cerpm
+copying cerpm/subscriber_member_function.py -> /home/acp/programming/rosdock/build/cerpm/build/lib/cerpm
+copying cerpm/__init__.py -> /home/acp/programming/rosdock/build/cerpm/build/lib/cerpm
+running install
+running install_lib
+creating /home/acp/programming/rosdock/install/cerpm/lib/python3.12/site-packages/cerpm
+copying /home/acp/programming/rosdock/build/cerpm/build/lib/cerpm/publisher_member_function.py -> /home/acp/programming/rosdock/install/cerpm/lib/python3.12/site-packages/cerpm
+copying /home/acp/programming/rosdock/build/cerpm/build/lib/cerpm/subscriber_member_function.py -> /home/acp/programming/rosdock/install/cerpm/lib/python3.12/site-packages/cerpm
+copying /home/acp/programming/rosdock/build/cerpm/build/lib/cerpm/__init__.py -> /home/acp/programming/rosdock/install/cerpm/lib/python3.12/site-packages/cerpm
+byte-compiling /home/acp/programming/rosdock/install/cerpm/lib/python3.12/site-packages/cerpm/publisher_member_function.py to publisher_member_function.cpython-312.pyc
+byte-compiling /home/acp/programming/rosdock/install/cerpm/lib/python3.12/site-packages/cerpm/subscriber_member_function.py to subscriber_member_function.cpython-312.pyc
+byte-compiling /home/acp/programming/rosdock/install/cerpm/lib/python3.12/site-packages/cerpm/__init__.py to __init__.cpython-312.pyc
+running install_data
+creating /home/acp/programming/rosdock/install/cerpm/share/ament_index
+creating /home/acp/programming/rosdock/install/cerpm/share/ament_index/resource_index
+creating /home/acp/programming/rosdock/install/cerpm/share/ament_index/resource_index/packages
+copying resource/cerpm -> /home/acp/programming/rosdock/install/cerpm/share/ament_index/resource_index/packages
+copying package.xml -> /home/acp/programming/rosdock/install/cerpm/share/cerpm
+running install_egg_info
+Copying ../../build/cerpm/cerpm.egg-info to /home/acp/programming/rosdock/install/cerpm/lib/python3.12/site-packages/cerpm-0.0.0-py3.12.egg-info
+running install_scripts
+Installing listener script to /home/acp/programming/rosdock/install/cerpm/lib/cerpm
+Installing talker script to /home/acp/programming/rosdock/install/cerpm/lib/cerpm
+writing list of installed files to '/home/acp/programming/rosdock/build/cerpm/install.log'

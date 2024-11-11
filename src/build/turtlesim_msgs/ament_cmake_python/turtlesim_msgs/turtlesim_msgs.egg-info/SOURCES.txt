@@ -1,0 +1,6 @@
+setup.py
+turtlesim_msgs/__init__.py
+turtlesim_msgs.egg-info/PKG-INFO
+turtlesim_msgs.egg-info/SOURCES.txt
+turtlesim_msgs.egg-info/dependency_links.txt
+turtlesim_msgs.egg-info/top_level.txt

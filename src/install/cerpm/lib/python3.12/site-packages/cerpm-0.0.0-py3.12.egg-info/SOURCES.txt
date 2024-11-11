@@ -1,0 +1,15 @@
+LICENSE
+package.xml
+setup.cfg
+setup.py
+../build/cerpm/cerpm.egg-info/PKG-INFO
+../build/cerpm/cerpm.egg-info/SOURCES.txt
+../build/cerpm/cerpm.egg-info/dependency_links.txt
+../build/cerpm/cerpm.egg-info/requires.txt
+../build/cerpm/cerpm.egg-info/top_level.txt
+../build/cerpm/cerpm.egg-info/zip-safe
+cerpm/__init__.py
+resource/cerpm
+test/test_copyright.py
+test/test_flake8.py
+test/test_pep257.py

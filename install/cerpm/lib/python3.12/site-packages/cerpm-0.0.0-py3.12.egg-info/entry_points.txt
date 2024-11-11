@@ -1,0 +1,5 @@
+[console_scripts]
+cerpm = cerpm.cerpm:main
+cerpm_listener = cerpm.cerpm_listener:main
+listener = py_pubsub.subscriber_member_function:main
+talker = cerpm.publisher_member_function:main

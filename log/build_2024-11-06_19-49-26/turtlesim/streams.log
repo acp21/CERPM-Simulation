@@ -1,0 +1,106 @@
+[0.008s] Invoking command in '/home/acp/programming/rosdock/build/turtlesim': AMENT_PREFIX_PATH=/home/acp/programming/rosdock/install/turtlesim_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/acp/programming/rosdock/install/turtlesim_msgs:/opt/ros/rolling/opt/gz_math_vendor:/opt/ros/rolling/opt/gz_utils_vendor:/opt/ros/rolling/opt/gz_cmake_vendor:/opt/ros/rolling DEBUGINFOD_URLS=https://debuginfod.ubuntu.com LD_LIBRARY_PATH=/home/acp/programming/rosdock/install/turtlesim_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/acp/programming/rosdock/install/turtlesim_msgs/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/cmake /home/acp/programming/rosdock/src/ros_tutorials/turtlesim -DCMAKE_INSTALL_PREFIX=/home/acp/programming/rosdock/install/turtlesim
+[0.050s] -- The C compiler identification is GNU 13.2.0
+[0.096s] -- The CXX compiler identification is GNU 13.2.0
+[0.112s] -- Detecting C compiler ABI info
+[0.190s] -- Detecting C compiler ABI info - done
+[0.206s] -- Check for working C compiler: /usr/bin/cc - skipped
+[0.206s] -- Detecting C compile features
+[0.207s] -- Detecting C compile features - done
+[0.219s] -- Detecting CXX compiler ABI info
+[0.307s] -- Detecting CXX compiler ABI info - done
+[0.313s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[0.313s] -- Detecting CXX compile features
+[0.313s] -- Detecting CXX compile features - done
+[0.315s] -- Found ament_cmake: 2.7.0 (/opt/ros/rolling/share/ament_cmake/cmake)
+[0.413s] -- Found Python3: /usr/bin/python3 (found version "3.12.3") found components: Interpreter 
+[0.507s] -- Found ament_index_cpp: 1.9.0 (/opt/ros/rolling/share/ament_index_cpp/cmake)
+[0.509s] -- Found geometry_msgs: 5.4.1 (/opt/ros/rolling/share/geometry_msgs/cmake)
+[0.536s] -- Found rosidl_generator_c: 4.8.1 (/opt/ros/rolling/share/rosidl_generator_c/cmake)
+[0.544s] -- Found rosidl_generator_cpp: 4.8.1 (/opt/ros/rolling/share/rosidl_generator_cpp/cmake)
+[0.554s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[0.567s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[0.617s] -- Found rclcpp: 28.3.3 (/opt/ros/rolling/share/rclcpp/cmake)
+[0.659s] -- Found rmw_implementation_cmake: 7.4.3 (/opt/ros/rolling/share/rmw_implementation_cmake/cmake)
+[0.661s] -- Found rmw_fastrtps_cpp: 9.0.1 (/opt/ros/rolling/share/rmw_fastrtps_cpp/cmake)
+[0.736s] -- Found OpenSSL: /usr/lib/x86_64-linux-gnu/libcrypto.so (found version "3.0.13")  
+[0.751s] -- Found FastRTPS: /opt/ros/rolling/include (Required is at least version "2.13") 
+[0.772s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[0.821s] -- Found rclcpp_action: 28.3.3 (/opt/ros/rolling/share/rclcpp_action/cmake)
+[0.853s] -- Found std_srvs: 5.4.1 (/opt/ros/rolling/share/std_srvs/cmake)
+[0.864s] -- Found turtlesim_msgs: 1.9.2 (/home/acp/programming/rosdock/install/turtlesim_msgs/share/turtlesim_msgs/cmake)
+[0.884s] -- Found ament_lint_auto: 0.18.1 (/opt/ros/rolling/share/ament_lint_auto/cmake)
+[0.957s] -- Added test 'copyright' to check source files copyright and LICENSE
+[0.959s] -- Added test 'cppcheck' to perform static code analysis on C / C++ code
+[0.959s] -- Configured cppcheck include dirs: /home/acp/programming/rosdock/src/ros_tutorials/turtlesim/include
+[0.959s] -- Configured cppcheck exclude dirs and/or files: 
+[0.960s] -- Added test 'cpplint' to check C / C++ code against the Google style
+[0.960s] -- Configured cpplint exclude dirs and/or files: 
+[0.961s] -- Added test 'flake8' to check Python code syntax and style conventions
+[0.961s] -- Configured 'flake8' exclude dirs and/or files: 
+[0.961s] -- Added test 'lint_cmake' to check CMake code style
+[0.962s] -- Added test 'pep257' to check Python code against some of the docstring style conventions in PEP 257
+[0.963s] -- Added test 'uncrustify' to check C / C++ code style
+[0.963s] -- Configured uncrustify additional arguments: 
+[0.964s] -- Added test 'xmllint' to check XML markup files
+[0.965s] -- Configuring done (1.0s)
+[0.986s] -- Generating done (0.0s)
+[0.987s] -- Build files have been written to: /home/acp/programming/rosdock/build/turtlesim
+[1.004s] Invoked command in '/home/acp/programming/rosdock/build/turtlesim' returned '0': AMENT_PREFIX_PATH=/home/acp/programming/rosdock/install/turtlesim_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/acp/programming/rosdock/install/turtlesim_msgs:/opt/ros/rolling/opt/gz_math_vendor:/opt/ros/rolling/opt/gz_utils_vendor:/opt/ros/rolling/opt/gz_cmake_vendor:/opt/ros/rolling DEBUGINFOD_URLS=https://debuginfod.ubuntu.com LD_LIBRARY_PATH=/home/acp/programming/rosdock/install/turtlesim_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/acp/programming/rosdock/install/turtlesim_msgs/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/cmake /home/acp/programming/rosdock/src/ros_tutorials/turtlesim -DCMAKE_INSTALL_PREFIX=/home/acp/programming/rosdock/install/turtlesim
+[1.006s] Invoking command in '/home/acp/programming/rosdock/build/turtlesim': AMENT_PREFIX_PATH=/home/acp/programming/rosdock/install/turtlesim_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/acp/programming/rosdock/install/turtlesim_msgs:/opt/ros/rolling/opt/gz_math_vendor:/opt/ros/rolling/opt/gz_utils_vendor:/opt/ros/rolling/opt/gz_cmake_vendor:/opt/ros/rolling DEBUGINFOD_URLS=https://debuginfod.ubuntu.com LD_LIBRARY_PATH=/home/acp/programming/rosdock/install/turtlesim_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/acp/programming/rosdock/install/turtlesim_msgs/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/cmake --build /home/acp/programming/rosdock/build/turtlesim -- -j16 -l16
+[1.045s] [  8%] [34m[1mGenerating include/turtlesim/moc_turtle_frame.cpp[0m
+[1.057s] [ 33%] [32mBuilding CXX object CMakeFiles/turtle_teleop_key.dir/tutorials/teleop_turtle_key.cpp.o[0m
+[1.057s] [ 33%] [32mBuilding CXX object CMakeFiles/draw_square.dir/tutorials/draw_square.cpp.o[0m
+[1.057s] [ 33%] [32mBuilding CXX object CMakeFiles/mimic.dir/tutorials/mimic.cpp.o[0m
+[1.108s] [ 58%] [32mBuilding CXX object CMakeFiles/turtlesim_node.dir/src/turtle.cpp.o[0m
+[1.108s] [ 58%] [32mBuilding CXX object CMakeFiles/turtlesim_node.dir/include/turtlesim/moc_turtle_frame.cpp.o[0m
+[1.108s] [ 58%] [32mBuilding CXX object CMakeFiles/turtlesim_node.dir/src/turtle_frame.cpp.o[0m
+[1.108s] [ 66%] [32mBuilding CXX object CMakeFiles/turtlesim_node.dir/src/turtlesim.cpp.o[0m
+[6.161s] [ 75%] [32m[1mLinking CXX executable turtle_teleop_key[0m
+[6.338s] [ 75%] Built target turtle_teleop_key
+[7.833s] [ 83%] [32m[1mLinking CXX executable mimic[0m
+[8.057s] [ 83%] Built target mimic
+[8.465s] [ 91%] [32m[1mLinking CXX executable draw_square[0m
+[8.730s] [ 91%] Built target draw_square
+[11.103s] [100%] [32m[1mLinking CXX executable turtlesim_node[0m
+[12.457s] [100%] Built target turtlesim_node
+[12.469s] Invoked command in '/home/acp/programming/rosdock/build/turtlesim' returned '0': AMENT_PREFIX_PATH=/home/acp/programming/rosdock/install/turtlesim_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/acp/programming/rosdock/install/turtlesim_msgs:/opt/ros/rolling/opt/gz_math_vendor:/opt/ros/rolling/opt/gz_utils_vendor:/opt/ros/rolling/opt/gz_cmake_vendor:/opt/ros/rolling DEBUGINFOD_URLS=https://debuginfod.ubuntu.com LD_LIBRARY_PATH=/home/acp/programming/rosdock/install/turtlesim_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/acp/programming/rosdock/install/turtlesim_msgs/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/cmake --build /home/acp/programming/rosdock/build/turtlesim -- -j16 -l16
+[12.515s] Invoking command in '/home/acp/programming/rosdock/build/turtlesim': AMENT_PREFIX_PATH=/home/acp/programming/rosdock/install/turtlesim_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/acp/programming/rosdock/install/turtlesim_msgs:/opt/ros/rolling/opt/gz_math_vendor:/opt/ros/rolling/opt/gz_utils_vendor:/opt/ros/rolling/opt/gz_cmake_vendor:/opt/ros/rolling DEBUGINFOD_URLS=https://debuginfod.ubuntu.com LD_LIBRARY_PATH=/home/acp/programming/rosdock/install/turtlesim_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/acp/programming/rosdock/install/turtlesim_msgs/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/cmake --install /home/acp/programming/rosdock/build/turtlesim
+[12.522s] -- Install configuration: ""
+[12.522s] -- Installing: /home/acp/programming/rosdock/install/turtlesim/lib/turtlesim/turtlesim_node
+[12.531s] -- Set non-toolchain portion of runtime path of "/home/acp/programming/rosdock/install/turtlesim/lib/turtlesim/turtlesim_node" to ""
+[12.531s] -- Installing: /home/acp/programming/rosdock/install/turtlesim/lib/turtlesim/turtle_teleop_key
+[12.532s] -- Set non-toolchain portion of runtime path of "/home/acp/programming/rosdock/install/turtlesim/lib/turtlesim/turtle_teleop_key" to ""
+[12.532s] -- Installing: /home/acp/programming/rosdock/install/turtlesim/lib/turtlesim/draw_square
+[12.537s] -- Set non-toolchain portion of runtime path of "/home/acp/programming/rosdock/install/turtlesim/lib/turtlesim/draw_square" to ""
+[12.537s] -- Installing: /home/acp/programming/rosdock/install/turtlesim/lib/turtlesim/mimic
+[12.541s] -- Set non-toolchain portion of runtime path of "/home/acp/programming/rosdock/install/turtlesim/lib/turtlesim/mimic" to ""
+[12.541s] -- Installing: /home/acp/programming/rosdock/install/turtlesim/share/turtlesim/images
+[12.541s] -- Installing: /home/acp/programming/rosdock/install/turtlesim/share/turtlesim/images/ardent.png
+[12.541s] -- Installing: /home/acp/programming/rosdock/install/turtlesim/share/turtlesim/images/galactic.png
+[12.541s] -- Installing: /home/acp/programming/rosdock/install/turtlesim/share/turtlesim/images/bouncy.png
+[12.541s] -- Installing: /home/acp/programming/rosdock/install/turtlesim/share/turtlesim/images/crystal.png
+[12.541s] -- Installing: /home/acp/programming/rosdock/install/turtlesim/share/turtlesim/images/jazzy.png
+[12.541s] -- Installing: /home/acp/programming/rosdock/install/turtlesim/share/turtlesim/images/rolling.png
+[12.541s] -- Installing: /home/acp/programming/rosdock/install/turtlesim/share/turtlesim/images/foxy.png
+[12.542s] -- Installing: /home/acp/programming/rosdock/install/turtlesim/share/turtlesim/images/dashing.png
+[12.542s] -- Installing: /home/acp/programming/rosdock/install/turtlesim/share/turtlesim/images/iron.png
+[12.542s] -- Installing: /home/acp/programming/rosdock/install/turtlesim/share/turtlesim/images/eloquent.png
+[12.542s] -- Installing: /home/acp/programming/rosdock/install/turtlesim/share/turtlesim/images/humble.png
+[12.542s] -- Installing: /home/acp/programming/rosdock/install/turtlesim/share/turtlesim/launch
+[12.542s] -- Installing: /home/acp/programming/rosdock/install/turtlesim/share/turtlesim/launch/multisim.launch.py
+[12.542s] -- Installing: /home/acp/programming/rosdock/install/turtlesim/share/ament_index/resource_index/package_run_dependencies/turtlesim
+[12.542s] -- Installing: /home/acp/programming/rosdock/install/turtlesim/share/ament_index/resource_index/parent_prefix_path/turtlesim
+[12.542s] -- Installing: /home/acp/programming/rosdock/install/turtlesim/share/turtlesim/environment/ament_prefix_path.sh
+[12.542s] -- Installing: /home/acp/programming/rosdock/install/turtlesim/share/turtlesim/environment/ament_prefix_path.dsv
+[12.542s] -- Installing: /home/acp/programming/rosdock/install/turtlesim/share/turtlesim/environment/path.sh
+[12.542s] -- Installing: /home/acp/programming/rosdock/install/turtlesim/share/turtlesim/environment/path.dsv
+[12.542s] -- Installing: /home/acp/programming/rosdock/install/turtlesim/share/turtlesim/local_setup.bash
+[12.543s] -- Installing: /home/acp/programming/rosdock/install/turtlesim/share/turtlesim/local_setup.sh
+[12.543s] -- Installing: /home/acp/programming/rosdock/install/turtlesim/share/turtlesim/local_setup.zsh
+[12.543s] -- Installing: /home/acp/programming/rosdock/install/turtlesim/share/turtlesim/local_setup.dsv
+[12.543s] -- Installing: /home/acp/programming/rosdock/install/turtlesim/share/turtlesim/package.dsv
+[12.543s] -- Installing: /home/acp/programming/rosdock/install/turtlesim/share/ament_index/resource_index/packages/turtlesim
+[12.543s] -- Installing: /home/acp/programming/rosdock/install/turtlesim/share/turtlesim/cmake/turtlesimConfig.cmake
+[12.543s] -- Installing: /home/acp/programming/rosdock/install/turtlesim/share/turtlesim/cmake/turtlesimConfig-version.cmake
+[12.543s] -- Installing: /home/acp/programming/rosdock/install/turtlesim/share/turtlesim/package.xml
+[12.545s] Invoked command in '/home/acp/programming/rosdock/build/turtlesim' returned '0': AMENT_PREFIX_PATH=/home/acp/programming/rosdock/install/turtlesim_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/acp/programming/rosdock/install/turtlesim_msgs:/opt/ros/rolling/opt/gz_math_vendor:/opt/ros/rolling/opt/gz_utils_vendor:/opt/ros/rolling/opt/gz_cmake_vendor:/opt/ros/rolling DEBUGINFOD_URLS=https://debuginfod.ubuntu.com LD_LIBRARY_PATH=/home/acp/programming/rosdock/install/turtlesim_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/acp/programming/rosdock/install/turtlesim_msgs/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/cmake --install /home/acp/programming/rosdock/build/turtlesim

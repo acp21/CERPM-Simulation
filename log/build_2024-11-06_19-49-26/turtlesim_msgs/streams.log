@@ -1,0 +1,506 @@
+[0.011s] Invoking command in '/home/acp/programming/rosdock/build/turtlesim_msgs': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/rolling DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake /home/acp/programming/rosdock/src/ros_tutorials/turtlesim_msgs -DCMAKE_INSTALL_PREFIX=/home/acp/programming/rosdock/install/turtlesim_msgs
+[0.109s] -- The C compiler identification is GNU 13.2.0
+[0.159s] -- The CXX compiler identification is GNU 13.2.0
+[0.178s] -- Detecting C compiler ABI info
+[0.269s] -- Detecting C compiler ABI info - done
+[0.274s] -- Check for working C compiler: /usr/bin/cc - skipped
+[0.274s] -- Detecting C compile features
+[0.274s] -- Detecting C compile features - done
+[0.283s] -- Detecting CXX compiler ABI info
+[0.378s] -- Detecting CXX compiler ABI info - done
+[0.383s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[0.383s] -- Detecting CXX compile features
+[0.384s] -- Detecting CXX compile features - done
+[0.386s] -- Found ament_cmake: 2.7.0 (/opt/ros/rolling/share/ament_cmake/cmake)
+[0.489s] -- Found Python3: /usr/bin/python3 (found version "3.12.3") found components: Interpreter 
+[0.598s] -- Found builtin_interfaces: 2.2.0 (/opt/ros/rolling/share/builtin_interfaces/cmake)
+[0.630s] -- Found rosidl_generator_c: 4.8.1 (/opt/ros/rolling/share/rosidl_generator_c/cmake)
+[0.638s] -- Found rosidl_generator_cpp: 4.8.1 (/opt/ros/rolling/share/rosidl_generator_cpp/cmake)
+[0.648s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[0.659s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[0.668s] -- Found rosidl_default_generators: 1.7.1 (/opt/ros/rolling/share/rosidl_default_generators/cmake)
+[0.677s] -- Found rosidl_adapter: 4.8.1 (/opt/ros/rolling/share/rosidl_adapter/cmake)
+[1.220s] -- Found ament_cmake_cppcheck: 0.18.1 (/opt/ros/rolling/share/ament_cmake_cppcheck/cmake)
+[1.224s] -- Found ament_cmake_cpplint: 0.18.1 (/opt/ros/rolling/share/ament_cmake_cpplint/cmake)
+[1.229s] -- Found ament_cmake_uncrustify: 0.18.1 (/opt/ros/rolling/share/ament_cmake_uncrustify/cmake)
+[1.234s] -- Found ament_cmake_ros: 0.13.0 (/opt/ros/rolling/share/ament_cmake_ros/cmake)
+[1.779s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[2.019s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[2.027s] -- Found python_cmake_module: 0.12.0 (/opt/ros/rolling/share/python_cmake_module/cmake)
+[2.143s] -- Found PythonExtra: /usr/bin/python3  
+[2.483s] -- Found Python3: /usr/bin/python3 (found version "3.12.3") found components: Interpreter Development NumPy Development.Module Development.Embed 
+[2.534s] -- Found ament_cmake_flake8: 0.18.1 (/opt/ros/rolling/share/ament_cmake_flake8/cmake)
+[2.538s] -- Found ament_cmake_pep257: 0.18.1 (/opt/ros/rolling/share/ament_cmake_pep257/cmake)
+[2.552s] -- Configuring done (2.5s)
+[2.588s] -- Generating done (0.0s)
+[2.590s] -- Build files have been written to: /home/acp/programming/rosdock/build/turtlesim_msgs
+[2.605s] Invoked command in '/home/acp/programming/rosdock/build/turtlesim_msgs' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/rolling DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake /home/acp/programming/rosdock/src/ros_tutorials/turtlesim_msgs -DCMAKE_INSTALL_PREFIX=/home/acp/programming/rosdock/install/turtlesim_msgs
+[2.608s] Invoking command in '/home/acp/programming/rosdock/build/turtlesim_msgs': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/rolling DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/acp/programming/rosdock/build/turtlesim_msgs -- -j16 -l16
+[2.661s] [  1%] [34m[1mGenerating type hashes for ROS interfaces[0m
+[2.668s] [  1%] Built target ament_cmake_python_copy_turtlesim_msgs
+[2.806s] running egg_info
+[2.807s] creating turtlesim_msgs.egg-info
+[2.816s] writing turtlesim_msgs.egg-info/PKG-INFO
+[2.816s] writing dependency_links to turtlesim_msgs.egg-info/dependency_links.txt
+[2.816s] writing top-level names to turtlesim_msgs.egg-info/top_level.txt
+[2.816s] writing manifest file 'turtlesim_msgs.egg-info/SOURCES.txt'
+[2.843s] reading manifest file 'turtlesim_msgs.egg-info/SOURCES.txt'
+[2.843s] writing manifest file 'turtlesim_msgs.egg-info/SOURCES.txt'
+[2.861s] [  1%] Built target turtlesim_msgs__rosidl_generator_type_description
+[2.872s] [  2%] [34m[1mGenerating C code for ROS interfaces[0m
+[2.880s] [  2%] Built target ament_cmake_python_build_turtlesim_msgs_egg
+[2.880s] [  2%] [34m[1mGenerating C++ code for ROS interfaces[0m
+[3.424s] [  2%] Built target turtlesim_msgs__cpp
+[3.561s] [ 10%] [32mBuilding C object CMakeFiles/turtlesim_msgs__rosidl_generator_c.dir/rosidl_generator_c/turtlesim_msgs/action/detail/rotate_absolute__description.c.o[0m
+[3.561s] [ 10%] [32mBuilding C object CMakeFiles/turtlesim_msgs__rosidl_generator_c.dir/rosidl_generator_c/turtlesim_msgs/msg/detail/color__type_support.c.o[0m
+[3.561s] [ 10%] [32mBuilding C object CMakeFiles/turtlesim_msgs__rosidl_generator_c.dir/rosidl_generator_c/turtlesim_msgs/msg/detail/pose__type_support.c.o[0m
+[3.561s] [ 10%] [32mBuilding C object CMakeFiles/turtlesim_msgs__rosidl_generator_c.dir/rosidl_generator_c/turtlesim_msgs/msg/detail/color__description.c.o[0m
+[3.561s] [ 10%] [32mBuilding C object CMakeFiles/turtlesim_msgs__rosidl_generator_c.dir/rosidl_generator_c/turtlesim_msgs/msg/detail/pose__description.c.o[0m
+[3.562s] [ 10%] [32mBuilding C object CMakeFiles/turtlesim_msgs__rosidl_generator_c.dir/rosidl_generator_c/turtlesim_msgs/action/detail/rotate_absolute__functions.c.o[0m
+[3.562s] [ 10%] [32mBuilding C object CMakeFiles/turtlesim_msgs__rosidl_generator_c.dir/rosidl_generator_c/turtlesim_msgs/msg/detail/pose__functions.c.o[0m
+[3.562s] [ 10%] [32mBuilding C object CMakeFiles/turtlesim_msgs__rosidl_generator_c.dir/rosidl_generator_c/turtlesim_msgs/msg/detail/color__functions.c.o[0m
+[3.562s] [ 12%] [32mBuilding C object CMakeFiles/turtlesim_msgs__rosidl_generator_c.dir/rosidl_generator_c/turtlesim_msgs/action/detail/rotate_absolute__type_support.c.o[0m
+[3.563s] [ 16%] [32mBuilding C object CMakeFiles/turtlesim_msgs__rosidl_generator_c.dir/rosidl_generator_c/turtlesim_msgs/srv/detail/kill__functions.c.o[0m
+[3.563s] [ 17%] [32mBuilding C object CMakeFiles/turtlesim_msgs__rosidl_generator_c.dir/rosidl_generator_c/turtlesim_msgs/srv/detail/kill__description.c.o[0m
+[3.563s] [ 17%] [32mBuilding C object CMakeFiles/turtlesim_msgs__rosidl_generator_c.dir/rosidl_generator_c/turtlesim_msgs/srv/detail/spawn__description.c.o[0m
+[3.563s] [ 17%] [32mBuilding C object CMakeFiles/turtlesim_msgs__rosidl_generator_c.dir/rosidl_generator_c/turtlesim_msgs/srv/detail/set_pen__description.c.o[0m
+[3.563s] [ 17%] [32mBuilding C object CMakeFiles/turtlesim_msgs__rosidl_generator_c.dir/rosidl_generator_c/turtlesim_msgs/srv/detail/set_pen__functions.c.o[0m
+[3.563s] [ 17%] [32mBuilding C object CMakeFiles/turtlesim_msgs__rosidl_generator_c.dir/rosidl_generator_c/turtlesim_msgs/srv/detail/kill__type_support.c.o[0m
+[3.563s] [ 18%] [32mBuilding C object CMakeFiles/turtlesim_msgs__rosidl_generator_c.dir/rosidl_generator_c/turtlesim_msgs/srv/detail/set_pen__type_support.c.o[0m
+[3.605s] [ 20%] [32mBuilding C object CMakeFiles/turtlesim_msgs__rosidl_generator_c.dir/rosidl_generator_c/turtlesim_msgs/srv/detail/spawn__functions.c.o[0m
+[3.605s] [ 20%] [32mBuilding C object CMakeFiles/turtlesim_msgs__rosidl_generator_c.dir/rosidl_generator_c/turtlesim_msgs/srv/detail/spawn__type_support.c.o[0m
+[3.618s] [ 24%] [32mBuilding C object CMakeFiles/turtlesim_msgs__rosidl_generator_c.dir/rosidl_generator_c/turtlesim_msgs/srv/detail/teleport_absolute__type_support.c.o[0m
+[3.618s] [ 24%] [32mBuilding C object CMakeFiles/turtlesim_msgs__rosidl_generator_c.dir/rosidl_generator_c/turtlesim_msgs/srv/detail/teleport_relative__description.c.o[0m
+[3.618s] [ 24%] [32mBuilding C object CMakeFiles/turtlesim_msgs__rosidl_generator_c.dir/rosidl_generator_c/turtlesim_msgs/srv/detail/teleport_absolute__functions.c.o[0m
+[3.618s] [ 24%] [32mBuilding C object CMakeFiles/turtlesim_msgs__rosidl_generator_c.dir/rosidl_generator_c/turtlesim_msgs/srv/detail/teleport_absolute__description.c.o[0m
+[3.619s] [ 25%] [32mBuilding C object CMakeFiles/turtlesim_msgs__rosidl_generator_c.dir/rosidl_generator_c/turtlesim_msgs/srv/detail/teleport_relative__functions.c.o[0m
+[3.624s] [ 25%] [32mBuilding C object CMakeFiles/turtlesim_msgs__rosidl_generator_c.dir/rosidl_generator_c/turtlesim_msgs/srv/detail/teleport_relative__type_support.c.o[0m
+[3.706s] [ 26%] [32m[1mLinking C shared library libturtlesim_msgs__rosidl_generator_c.so[0m
+[3.744s] [ 26%] Built target turtlesim_msgs__rosidl_generator_c
+[3.753s] [ 29%] [34m[1mGenerating C++ type support dispatch for ROS interfaces[0m
+[3.753s] [ 29%] [34m[1mGenerating C++ type support for eProsima Fast-RTPS[0m
+[3.753s] [ 29%] [34m[1mGenerating C type support dispatch for ROS interfaces[0m
+[3.753s] [ 30%] [34m[1mGenerating C++ introspection for ROS interfaces[0m
+[3.753s] [ 30%] [34m[1mGenerating C introspection for ROS interfaces[0m
+[3.753s] [ 31%] [34m[1mGenerating C type support for eProsima Fast-RTPS[0m
+[4.059s] [ 32%] [32mBuilding CXX object CMakeFiles/turtlesim_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/turtlesim_msgs/msg/pose__type_support.cpp.o[0m
+[4.059s] [ 33%] [32mBuilding CXX object CMakeFiles/turtlesim_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/turtlesim_msgs/action/rotate_absolute__type_support.cpp.o[0m
+[4.059s] [ 34%] [32mBuilding CXX object CMakeFiles/turtlesim_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/turtlesim_msgs/srv/kill__type_support.cpp.o[0m
+[4.059s] [ 36%] [32mBuilding CXX object CMakeFiles/turtlesim_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/turtlesim_msgs/srv/spawn__type_support.cpp.o[0m
+[4.059s] [ 36%] [32mBuilding CXX object CMakeFiles/turtlesim_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/turtlesim_msgs/msg/color__type_support.cpp.o[0m
+[4.060s] [ 37%] [32mBuilding CXX object CMakeFiles/turtlesim_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/turtlesim_msgs/srv/teleport_absolute__type_support.cpp.o[0m
+[4.060s] [ 38%] [32mBuilding CXX object CMakeFiles/turtlesim_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/turtlesim_msgs/srv/set_pen__type_support.cpp.o[0m
+[4.060s] [ 39%] [32mBuilding CXX object CMakeFiles/turtlesim_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/turtlesim_msgs/srv/teleport_relative__type_support.cpp.o[0m
+[4.070s] [ 40%] [32mBuilding CXX object CMakeFiles/turtlesim_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/turtlesim_msgs/srv/kill__type_support.cpp.o[0m
+[4.070s] [ 41%] [32mBuilding CXX object CMakeFiles/turtlesim_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/turtlesim_msgs/msg/color__type_support.cpp.o[0m
+[4.070s] [ 42%] [32mBuilding CXX object CMakeFiles/turtlesim_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/turtlesim_msgs/msg/pose__type_support.cpp.o[0m
+[4.070s] [ 42%] [32mBuilding CXX object CMakeFiles/turtlesim_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/turtlesim_msgs/action/rotate_absolute__type_support.cpp.o[0m
+[4.112s] [ 46%] [32mBuilding CXX object CMakeFiles/turtlesim_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/turtlesim_msgs/srv/teleport_absolute__type_support.cpp.o[0m
+[4.112s] [ 46%] [32mBuilding CXX object CMakeFiles/turtlesim_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/turtlesim_msgs/srv/spawn__type_support.cpp.o[0m
+[4.112s] [ 46%] [32mBuilding CXX object CMakeFiles/turtlesim_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/turtlesim_msgs/srv/set_pen__type_support.cpp.o[0m
+[4.113s] [ 46%] [32mBuilding CXX object CMakeFiles/turtlesim_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/turtlesim_msgs/srv/teleport_relative__type_support.cpp.o[0m
+[4.126s] [ 47%] [32m[1mLinking CXX shared library libturtlesim_msgs__rosidl_typesupport_c.so[0m
+[4.169s] [ 47%] Built target turtlesim_msgs__rosidl_typesupport_c
+[4.201s] [ 50%] [32mBuilding CXX object CMakeFiles/turtlesim_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/turtlesim_msgs/srv/detail/set_pen__type_support.cpp.o[0m
+[4.201s] [ 50%] [32mBuilding CXX object CMakeFiles/turtlesim_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/turtlesim_msgs/srv/detail/kill__type_support.cpp.o[0m
+[4.201s] [ 50%] [32mBuilding CXX object CMakeFiles/turtlesim_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/turtlesim_msgs/action/detail/rotate_absolute__type_support.cpp.o[0m
+[4.202s] [ 52%] [32mBuilding CXX object CMakeFiles/turtlesim_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/turtlesim_msgs/msg/detail/pose__type_support.cpp.o[0m
+[4.202s] [ 52%] [32mBuilding CXX object CMakeFiles/turtlesim_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/turtlesim_msgs/msg/detail/color__type_support.cpp.o[0m
+[4.444s] [ 53%] [32mBuilding CXX object CMakeFiles/turtlesim_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/turtlesim_msgs/srv/detail/spawn__type_support.cpp.o[0m
+[4.444s] [ 54%] [32mBuilding C object CMakeFiles/turtlesim_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/turtlesim_msgs/msg/detail/color__type_support.c.o[0m
+[4.448s] [ 55%] [32mBuilding CXX object CMakeFiles/turtlesim_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/turtlesim_msgs/srv/detail/teleport_absolute__type_support.cpp.o[0m
+[4.492s] [ 56%] [32mBuilding C object CMakeFiles/turtlesim_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/turtlesim_msgs/msg/detail/pose__type_support.c.o[0m
+[4.538s] [ 57%] [32mBuilding C object CMakeFiles/turtlesim_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/turtlesim_msgs/action/detail/rotate_absolute__type_support.c.o[0m
+[4.552s] [ 58%] [32mBuilding CXX object CMakeFiles/turtlesim_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/turtlesim_msgs/srv/detail/teleport_relative__type_support.cpp.o[0m
+[4.563s] [ 59%] [32mBuilding C object CMakeFiles/turtlesim_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/turtlesim_msgs/srv/detail/kill__type_support.c.o[0m
+[4.568s] [ 60%] [32mBuilding C object CMakeFiles/turtlesim_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/turtlesim_msgs/srv/detail/set_pen__type_support.c.o[0m
+[4.574s] [ 61%] [32mBuilding C object CMakeFiles/turtlesim_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/turtlesim_msgs/srv/detail/spawn__type_support.c.o[0m
+[4.583s] [ 62%] [32mBuilding C object CMakeFiles/turtlesim_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/turtlesim_msgs/srv/detail/teleport_absolute__type_support.c.o[0m
+[4.589s] [ 63%] [32mBuilding C object CMakeFiles/turtlesim_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/turtlesim_msgs/srv/detail/teleport_relative__type_support.c.o[0m
+[4.650s] [ 65%] [32mBuilding CXX object CMakeFiles/turtlesim_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/turtlesim_msgs/msg/detail/dds_fastrtps/color__type_support.cpp.o[0m
+[4.650s] [ 65%] [32m[1mLinking C shared library libturtlesim_msgs__rosidl_typesupport_introspection_c.so[0m
+[4.658s] [ 67%] [32mBuilding CXX object CMakeFiles/turtlesim_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/turtlesim_msgs/action/detail/dds_fastrtps/rotate_absolute__type_support.cpp.o[0m
+[4.658s] [ 67%] [32mBuilding CXX object CMakeFiles/turtlesim_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/turtlesim_msgs/msg/detail/dds_fastrtps/pose__type_support.cpp.o[0m
+[4.658s] [ 68%] [32mBuilding CXX object CMakeFiles/turtlesim_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/turtlesim_msgs/srv/detail/dds_fastrtps/kill__type_support.cpp.o[0m
+[4.660s] [ 70%] [32mBuilding CXX object CMakeFiles/turtlesim_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/turtlesim_msgs/srv/detail/dds_fastrtps/set_pen__type_support.cpp.o[0m
+[4.660s] [ 70%] [32mBuilding CXX object CMakeFiles/turtlesim_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/turtlesim_msgs/srv/detail/dds_fastrtps/spawn__type_support.cpp.o[0m
+[4.660s] [ 71%] [32mBuilding CXX object CMakeFiles/turtlesim_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/turtlesim_msgs/srv/detail/dds_fastrtps/teleport_absolute__type_support.cpp.o[0m
+[4.696s] [ 72%] [32mBuilding CXX object CMakeFiles/turtlesim_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/turtlesim_msgs/msg/detail/color__type_support_c.cpp.o[0m
+[4.701s] [ 72%] Built target turtlesim_msgs__rosidl_typesupport_introspection_c
+[4.721s] [ 73%] [32mBuilding CXX object CMakeFiles/turtlesim_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/turtlesim_msgs/msg/detail/pose__type_support_c.cpp.o[0m
+[4.722s] [ 74%] [32mBuilding CXX object CMakeFiles/turtlesim_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/turtlesim_msgs/srv/detail/dds_fastrtps/teleport_relative__type_support.cpp.o[0m
+[4.737s] [ 75%] [32mBuilding CXX object CMakeFiles/turtlesim_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/turtlesim_msgs/action/detail/rotate_absolute__type_support_c.cpp.o[0m
+[4.910s] [ 76%] [32m[1mLinking CXX shared library libturtlesim_msgs__rosidl_typesupport_cpp.so[0m
+[4.970s] [ 77%] [32mBuilding CXX object CMakeFiles/turtlesim_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/turtlesim_msgs/srv/detail/kill__type_support_c.cpp.o[0m
+[5.010s] [ 78%] [32mBuilding CXX object CMakeFiles/turtlesim_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/turtlesim_msgs/srv/detail/set_pen__type_support_c.cpp.o[0m
+[5.056s] [ 79%] [32mBuilding CXX object CMakeFiles/turtlesim_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/turtlesim_msgs/srv/detail/spawn__type_support_c.cpp.o[0m
+[5.080s] [ 79%] Built target turtlesim_msgs__rosidl_typesupport_cpp
+[5.097s] [ 80%] [32mBuilding CXX object CMakeFiles/turtlesim_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/turtlesim_msgs/srv/detail/teleport_absolute__type_support_c.cpp.o[0m
+[5.192s] [ 81%] [32m[1mLinking CXX shared library libturtlesim_msgs__rosidl_typesupport_introspection_cpp.so[0m
+[5.238s] [ 82%] [32mBuilding CXX object CMakeFiles/turtlesim_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/turtlesim_msgs/srv/detail/teleport_relative__type_support_c.cpp.o[0m
+[5.344s] [ 82%] Built target turtlesim_msgs__rosidl_typesupport_introspection_cpp
+[5.686s] [ 83%] [32m[1mLinking CXX shared library libturtlesim_msgs__rosidl_typesupport_fastrtps_c.so[0m
+[5.711s] [ 84%] [32m[1mLinking CXX shared library libturtlesim_msgs__rosidl_typesupport_fastrtps_cpp.so[0m
+[5.744s] [ 84%] Built target turtlesim_msgs__rosidl_typesupport_fastrtps_c
+[5.779s] [ 84%] Built target turtlesim_msgs__rosidl_typesupport_fastrtps_cpp
+[5.797s] [ 84%] Built target turtlesim_msgs
+[5.816s] [ 85%] [34m[1mGenerating Python code for ROS interfaces[0m
+[6.743s] [ 85%] Built target turtlesim_msgs__py
+[6.762s] [ 90%] [32mBuilding C object CMakeFiles/turtlesim_msgs__rosidl_generator_py.dir/rosidl_generator_py/turtlesim_msgs/srv/_teleport_absolute_s.c.o[0m
+[6.762s] [ 90%] [32mBuilding C object CMakeFiles/turtlesim_msgs__rosidl_generator_py.dir/rosidl_generator_py/turtlesim_msgs/srv/_kill_s.c.o[0m
+[6.762s] [ 90%] [32mBuilding C object CMakeFiles/turtlesim_msgs__rosidl_generator_py.dir/rosidl_generator_py/turtlesim_msgs/msg/_color_s.c.o[0m
+[6.762s] [ 90%] [32mBuilding C object CMakeFiles/turtlesim_msgs__rosidl_generator_py.dir/rosidl_generator_py/turtlesim_msgs/srv/_set_pen_s.c.o[0m
+[6.763s] [ 90%] [32mBuilding C object CMakeFiles/turtlesim_msgs__rosidl_generator_py.dir/rosidl_generator_py/turtlesim_msgs/action/_rotate_absolute_s.c.o[0m
+[6.763s] [ 91%] [32mBuilding C object CMakeFiles/turtlesim_msgs__rosidl_generator_py.dir/rosidl_generator_py/turtlesim_msgs/srv/_teleport_relative_s.c.o[0m
+[6.763s] [ 92%] [32mBuilding C object CMakeFiles/turtlesim_msgs__rosidl_generator_py.dir/rosidl_generator_py/turtlesim_msgs/msg/_pose_s.c.o[0m
+[6.763s] [ 93%] [32mBuilding C object CMakeFiles/turtlesim_msgs__rosidl_generator_py.dir/rosidl_generator_py/turtlesim_msgs/srv/_spawn_s.c.o[0m
+[6.920s] [ 94%] [32m[1mLinking C shared library libturtlesim_msgs__rosidl_generator_py.so[0m
+[6.957s] [ 94%] Built target turtlesim_msgs__rosidl_generator_py
+[6.973s] [ 97%] [32mBuilding C object CMakeFiles/turtlesim_msgs_s__rosidl_typesupport_c.dir/rosidl_generator_py/turtlesim_msgs/_turtlesim_msgs_s.ep.rosidl_typesupport_c.c.o[0m
+[6.973s] [ 97%] [32mBuilding C object CMakeFiles/turtlesim_msgs_s__rosidl_typesupport_fastrtps_c.dir/rosidl_generator_py/turtlesim_msgs/_turtlesim_msgs_s.ep.rosidl_typesupport_fastrtps_c.c.o[0m
+[6.973s] [ 97%] [32mBuilding C object CMakeFiles/turtlesim_msgs_s__rosidl_typesupport_introspection_c.dir/rosidl_generator_py/turtlesim_msgs/_turtlesim_msgs_s.ep.rosidl_typesupport_introspection_c.c.o[0m
+[7.104s] [ 98%] [32m[1mLinking C shared module rosidl_generator_py/turtlesim_msgs/turtlesim_msgs_s__rosidl_typesupport_c.so[0m
+[7.106s] [100%] [32m[1mLinking C shared module rosidl_generator_py/turtlesim_msgs/turtlesim_msgs_s__rosidl_typesupport_fastrtps_c.so[0m
+[7.106s] [100%] [32m[1mLinking C shared module rosidl_generator_py/turtlesim_msgs/turtlesim_msgs_s__rosidl_typesupport_introspection_c.so[0m
+[7.130s] [100%] Built target turtlesim_msgs_s__rosidl_typesupport_c
+[7.131s] [100%] Built target turtlesim_msgs_s__rosidl_typesupport_introspection_c
+[7.132s] [100%] Built target turtlesim_msgs_s__rosidl_typesupport_fastrtps_c
+[7.144s] Invoked command in '/home/acp/programming/rosdock/build/turtlesim_msgs' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/rolling DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/acp/programming/rosdock/build/turtlesim_msgs -- -j16 -l16
+[7.401s] Invoking command in '/home/acp/programming/rosdock/build/turtlesim_msgs': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/rolling DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --install /home/acp/programming/rosdock/build/turtlesim_msgs
+[7.407s] -- Install configuration: ""
+[7.407s] -- Installing: /home/acp/programming/rosdock/install/turtlesim_msgs/share/ament_index/resource_index/rosidl_interfaces/turtlesim_msgs
+[7.407s] -- Installing: /home/acp/programming/rosdock/install/turtlesim_msgs/share/turtlesim_msgs/msg/Color.json
+[7.407s] -- Installing: /home/acp/programming/rosdock/install/turtlesim_msgs/share/turtlesim_msgs/msg/Pose.json
+[7.407s] -- Installing: /home/acp/programming/rosdock/install/turtlesim_msgs/share/turtlesim_msgs/action/RotateAbsolute.json
+[7.408s] -- Installing: /home/acp/programming/rosdock/install/turtlesim_msgs/share/turtlesim_msgs/srv/Kill.json
+[7.408s] -- Installing: /home/acp/programming/rosdock/install/turtlesim_msgs/share/turtlesim_msgs/srv/SetPen.json
+[7.408s] -- Installing: /home/acp/programming/rosdock/install/turtlesim_msgs/share/turtlesim_msgs/srv/Spawn.json
+[7.408s] -- Installing: /home/acp/programming/rosdock/install/turtlesim_msgs/share/turtlesim_msgs/srv/TeleportAbsolute.json
+[7.408s] -- Installing: /home/acp/programming/rosdock/install/turtlesim_msgs/share/turtlesim_msgs/srv/TeleportRelative.json
+[7.408s] -- Installing: /home/acp/programming/rosdock/install/turtlesim_msgs/include/turtlesim_msgs/turtlesim_msgs
+[7.408s] -- Installing: /home/acp/programming/rosdock/install/turtlesim_msgs/include/turtlesim_msgs/turtlesim_msgs/action
+[7.408s] -- Installing: /home/acp/programming/rosdock/install/turtlesim_msgs/include/turtlesim_msgs/turtlesim_msgs/action/detail
+[7.408s] -- Installing: /home/acp/programming/rosdock/install/turtlesim_msgs/include/turtlesim_msgs/turtlesim_msgs/action/detail/rotate_absolute__description.c
+[7.408s] -- Installing: /home/acp/programming/rosdock/install/turtlesim_msgs/include/turtlesim_msgs/turtlesim_msgs/action/detail/rotate_absolute__functions.c
+[7.409s] -- Installing: /home/acp/programming/rosdock/install/turtlesim_msgs/include/turtlesim_msgs/turtlesim_msgs/action/detail/rotate_absolute__type_support.c
+[7.409s] -- Installing: /home/acp/programming/rosdock/install/turtlesim_msgs/include/turtlesim_msgs/turtlesim_msgs/action/detail/rotate_absolute__functions.h
+[7.409s] -- Installing: /home/acp/programming/rosdock/install/turtlesim_msgs/include/turtlesim_msgs/turtlesim_msgs/action/detail/rotate_absolute__type_support.h
+[7.409s] -- Installing: /home/acp/programming/rosdock/install/turtlesim_msgs/include/turtlesim_msgs/turtlesim_msgs/action/detail/rotate_absolute__struct.h
+[7.409s] -- Installing: /home/acp/programming/rosdock/install/turtlesim_msgs/include/turtlesim_msgs/turtlesim_msgs/action/rotate_absolute.h
+[7.409s] -- Installing: /home/acp/programming/rosdock/install/turtlesim_msgs/include/turtlesim_msgs/turtlesim_msgs/msg
+[7.409s] -- Installing: /home/acp/programming/rosdock/install/turtlesim_msgs/include/turtlesim_msgs/turtlesim_msgs/msg/rosidl_generator_c__visibility_control.h
+[7.409s] -- Installing: /home/acp/programming/rosdock/install/turtlesim_msgs/include/turtlesim_msgs/turtlesim_msgs/msg/detail
+[7.409s] -- Installing: /home/acp/programming/rosdock/install/turtlesim_msgs/include/turtlesim_msgs/turtlesim_msgs/msg/detail/color__functions.c
+[7.409s] -- Installing: /home/acp/programming/rosdock/install/turtlesim_msgs/include/turtlesim_msgs/turtlesim_msgs/msg/detail/color__description.c
+[7.409s] -- Installing: /home/acp/programming/rosdock/install/turtlesim_msgs/include/turtlesim_msgs/turtlesim_msgs/msg/detail/color__type_support.h
+[7.409s] -- Installing: /home/acp/programming/rosdock/install/turtlesim_msgs/include/turtlesim_msgs/turtlesim_msgs/msg/detail/color__functions.h
+[7.409s] -- Installing: /home/acp/programming/rosdock/install/turtlesim_msgs/include/turtlesim_msgs/turtlesim_msgs/msg/detail/color__type_support.c
+[7.410s] -- Installing: /home/acp/programming/rosdock/install/turtlesim_msgs/include/turtlesim_msgs/turtlesim_msgs/msg/detail/pose__description.c
+[7.410s] -- Installing: /home/acp/programming/rosdock/install/turtlesim_msgs/include/turtlesim_msgs/turtlesim_msgs/msg/detail/pose__struct.h
+[7.410s] -- Installing: /home/acp/programming/rosdock/install/turtlesim_msgs/include/turtlesim_msgs/turtlesim_msgs/msg/detail/pose__functions.h
+[7.410s] -- Installing: /home/acp/programming/rosdock/install/turtlesim_msgs/include/turtlesim_msgs/turtlesim_msgs/msg/detail/pose__type_support.h
+[7.410s] -- Installing: /home/acp/programming/rosdock/install/turtlesim_msgs/include/turtlesim_msgs/turtlesim_msgs/msg/detail/pose__type_support.c
+[7.410s] -- Installing: /home/acp/programming/rosdock/install/turtlesim_msgs/include/turtlesim_msgs/turtlesim_msgs/msg/detail/color__struct.h
+[7.410s] -- Installing: /home/acp/programming/rosdock/install/turtlesim_msgs/include/turtlesim_msgs/turtlesim_msgs/msg/detail/pose__functions.c
+[7.410s] -- Installing: /home/acp/programming/rosdock/install/turtlesim_msgs/include/turtlesim_msgs/turtlesim_msgs/msg/color.h
+[7.410s] -- Installing: /home/acp/programming/rosdock/install/turtlesim_msgs/include/turtlesim_msgs/turtlesim_msgs/msg/pose.h
+[7.410s] -- Installing: /home/acp/programming/rosdock/install/turtlesim_msgs/include/turtlesim_msgs/turtlesim_msgs/srv
+[7.410s] -- Installing: /home/acp/programming/rosdock/install/turtlesim_msgs/include/turtlesim_msgs/turtlesim_msgs/srv/teleport_absolute.h
+[7.410s] -- Installing: /home/acp/programming/rosdock/install/turtlesim_msgs/include/turtlesim_msgs/turtlesim_msgs/srv/set_pen.h
+[7.410s] -- Installing: /home/acp/programming/rosdock/install/turtlesim_msgs/include/turtlesim_msgs/turtlesim_msgs/srv/spawn.h
+[7.410s] -- Installing: /home/acp/programming/rosdock/install/turtlesim_msgs/include/turtlesim_msgs/turtlesim_msgs/srv/detail
+[7.411s] -- Installing: /home/acp/programming/rosdock/install/turtlesim_msgs/include/turtlesim_msgs/turtlesim_msgs/srv/detail/spawn__type_support.c
+[7.411s] -- Installing: /home/acp/programming/rosdock/install/turtlesim_msgs/include/turtlesim_msgs/turtlesim_msgs/srv/detail/set_pen__type_support.c
+[7.411s] -- Installing: /home/acp/programming/rosdock/install/turtlesim_msgs/include/turtlesim_msgs/turtlesim_msgs/srv/detail/kill__description.c
+[7.411s] -- Installing: /home/acp/programming/rosdock/install/turtlesim_msgs/include/turtlesim_msgs/turtlesim_msgs/srv/detail/kill__functions.h
+[7.411s] -- Installing: /home/acp/programming/rosdock/install/turtlesim_msgs/include/turtlesim_msgs/turtlesim_msgs/srv/detail/kill__struct.h
+[7.411s] -- Installing: /home/acp/programming/rosdock/install/turtlesim_msgs/include/turtlesim_msgs/turtlesim_msgs/srv/detail/set_pen__struct.h
+[7.411s] -- Installing: /home/acp/programming/rosdock/install/turtlesim_msgs/include/turtlesim_msgs/turtlesim_msgs/srv/detail/kill__functions.c
+[7.411s] -- Installing: /home/acp/programming/rosdock/install/turtlesim_msgs/include/turtlesim_msgs/turtlesim_msgs/srv/detail/teleport_absolute__struct.h
+[7.411s] -- Installing: /home/acp/programming/rosdock/install/turtlesim_msgs/include/turtlesim_msgs/turtlesim_msgs/srv/detail/teleport_relative__description.c
+[7.411s] -- Installing: /home/acp/programming/rosdock/install/turtlesim_msgs/include/turtlesim_msgs/turtlesim_msgs/srv/detail/kill__type_support.c
+[7.411s] -- Installing: /home/acp/programming/rosdock/install/turtlesim_msgs/include/turtlesim_msgs/turtlesim_msgs/srv/detail/teleport_absolute__type_support.c
+[7.411s] -- Installing: /home/acp/programming/rosdock/install/turtlesim_msgs/include/turtlesim_msgs/turtlesim_msgs/srv/detail/set_pen__description.c
+[7.412s] -- Installing: /home/acp/programming/rosdock/install/turtlesim_msgs/include/turtlesim_msgs/turtlesim_msgs/srv/detail/teleport_relative__struct.h
+[7.412s] -- Installing: /home/acp/programming/rosdock/install/turtlesim_msgs/include/turtlesim_msgs/turtlesim_msgs/srv/detail/teleport_relative__type_support.h
+[7.412s] -- Installing: /home/acp/programming/rosdock/install/turtlesim_msgs/include/turtlesim_msgs/turtlesim_msgs/srv/detail/teleport_relative__functions.c
+[7.412s] -- Installing: /home/acp/programming/rosdock/install/turtlesim_msgs/include/turtlesim_msgs/turtlesim_msgs/srv/detail/set_pen__functions.c
+[7.412s] -- Installing: /home/acp/programming/rosdock/install/turtlesim_msgs/include/turtlesim_msgs/turtlesim_msgs/srv/detail/teleport_relative__type_support.c
+[7.412s] -- Installing: /home/acp/programming/rosdock/install/turtlesim_msgs/include/turtlesim_msgs/turtlesim_msgs/srv/detail/teleport_relative__functions.h
+[7.412s] -- Installing: /home/acp/programming/rosdock/install/turtlesim_msgs/include/turtlesim_msgs/turtlesim_msgs/srv/detail/teleport_absolute__functions.h
+[7.412s] -- Installing: /home/acp/programming/rosdock/install/turtlesim_msgs/include/turtlesim_msgs/turtlesim_msgs/srv/detail/spawn__type_support.h
+[7.412s] -- Installing: /home/acp/programming/rosdock/install/turtlesim_msgs/include/turtlesim_msgs/turtlesim_msgs/srv/detail/spawn__functions.h
+[7.412s] -- Installing: /home/acp/programming/rosdock/install/turtlesim_msgs/include/turtlesim_msgs/turtlesim_msgs/srv/detail/teleport_absolute__type_support.h
+[7.412s] -- Installing: /home/acp/programming/rosdock/install/turtlesim_msgs/include/turtlesim_msgs/turtlesim_msgs/srv/detail/set_pen__functions.h
+[7.413s] -- Installing: /home/acp/programming/rosdock/install/turtlesim_msgs/include/turtlesim_msgs/turtlesim_msgs/srv/detail/spawn__functions.c
+[7.413s] -- Installing: /home/acp/programming/rosdock/install/turtlesim_msgs/include/turtlesim_msgs/turtlesim_msgs/srv/detail/teleport_absolute__functions.c
+[7.413s] -- Installing: /home/acp/programming/rosdock/install/turtlesim_msgs/include/turtlesim_msgs/turtlesim_msgs/srv/detail/kill__type_support.h
+[7.413s] -- Installing: /home/acp/programming/rosdock/install/turtlesim_msgs/include/turtlesim_msgs/turtlesim_msgs/srv/detail/set_pen__type_support.h
+[7.413s] -- Installing: /home/acp/programming/rosdock/install/turtlesim_msgs/include/turtlesim_msgs/turtlesim_msgs/srv/detail/spawn__struct.h
+[7.413s] -- Installing: /home/acp/programming/rosdock/install/turtlesim_msgs/include/turtlesim_msgs/turtlesim_msgs/srv/detail/teleport_absolute__description.c
+[7.413s] -- Installing: /home/acp/programming/rosdock/install/turtlesim_msgs/include/turtlesim_msgs/turtlesim_msgs/srv/detail/spawn__description.c
+[7.413s] -- Installing: /home/acp/programming/rosdock/install/turtlesim_msgs/include/turtlesim_msgs/turtlesim_msgs/srv/teleport_relative.h
+[7.413s] -- Installing: /home/acp/programming/rosdock/install/turtlesim_msgs/include/turtlesim_msgs/turtlesim_msgs/srv/kill.h
+[7.413s] -- Installing: /home/acp/programming/rosdock/install/turtlesim_msgs/share/turtlesim_msgs/environment/library_path.sh
+[7.414s] -- Installing: /home/acp/programming/rosdock/install/turtlesim_msgs/share/turtlesim_msgs/environment/library_path.dsv
+[7.414s] -- Installing: /home/acp/programming/rosdock/install/turtlesim_msgs/lib/libturtlesim_msgs__rosidl_generator_c.so
+[7.414s] -- Set non-toolchain portion of runtime path of "/home/acp/programming/rosdock/install/turtlesim_msgs/lib/libturtlesim_msgs__rosidl_generator_c.so" to ""
+[7.414s] -- Up-to-date: /home/acp/programming/rosdock/install/turtlesim_msgs/include/turtlesim_msgs/turtlesim_msgs
+[7.414s] -- Up-to-date: /home/acp/programming/rosdock/install/turtlesim_msgs/include/turtlesim_msgs/turtlesim_msgs/action
+[7.414s] -- Up-to-date: /home/acp/programming/rosdock/install/turtlesim_msgs/include/turtlesim_msgs/turtlesim_msgs/action/detail
+[7.414s] -- Installing: /home/acp/programming/rosdock/install/turtlesim_msgs/include/turtlesim_msgs/turtlesim_msgs/action/detail/rotate_absolute__rosidl_typesupport_fastrtps_c.h
+[7.414s] -- Up-to-date: /home/acp/programming/rosdock/install/turtlesim_msgs/include/turtlesim_msgs/turtlesim_msgs/msg
+[7.414s] -- Up-to-date: /home/acp/programming/rosdock/install/turtlesim_msgs/include/turtlesim_msgs/turtlesim_msgs/msg/detail
+[7.414s] -- Installing: /home/acp/programming/rosdock/install/turtlesim_msgs/include/turtlesim_msgs/turtlesim_msgs/msg/detail/color__rosidl_typesupport_fastrtps_c.h
+[7.414s] -- Installing: /home/acp/programming/rosdock/install/turtlesim_msgs/include/turtlesim_msgs/turtlesim_msgs/msg/detail/pose__rosidl_typesupport_fastrtps_c.h
+[7.415s] -- Installing: /home/acp/programming/rosdock/install/turtlesim_msgs/include/turtlesim_msgs/turtlesim_msgs/msg/rosidl_typesupport_fastrtps_c__visibility_control.h
+[7.415s] -- Up-to-date: /home/acp/programming/rosdock/install/turtlesim_msgs/include/turtlesim_msgs/turtlesim_msgs/srv
+[7.415s] -- Up-to-date: /home/acp/programming/rosdock/install/turtlesim_msgs/include/turtlesim_msgs/turtlesim_msgs/srv/detail
+[7.415s] -- Installing: /home/acp/programming/rosdock/install/turtlesim_msgs/include/turtlesim_msgs/turtlesim_msgs/srv/detail/spawn__rosidl_typesupport_fastrtps_c.h
+[7.415s] -- Installing: /home/acp/programming/rosdock/install/turtlesim_msgs/include/turtlesim_msgs/turtlesim_msgs/srv/detail/set_pen__rosidl_typesupport_fastrtps_c.h
+[7.415s] -- Installing: /home/acp/programming/rosdock/install/turtlesim_msgs/include/turtlesim_msgs/turtlesim_msgs/srv/detail/teleport_relative__rosidl_typesupport_fastrtps_c.h
+[7.415s] -- Installing: /home/acp/programming/rosdock/install/turtlesim_msgs/include/turtlesim_msgs/turtlesim_msgs/srv/detail/kill__rosidl_typesupport_fastrtps_c.h
+[7.415s] -- Installing: /home/acp/programming/rosdock/install/turtlesim_msgs/include/turtlesim_msgs/turtlesim_msgs/srv/detail/teleport_absolute__rosidl_typesupport_fastrtps_c.h
+[7.415s] -- Installing: /home/acp/programming/rosdock/install/turtlesim_msgs/lib/libturtlesim_msgs__rosidl_typesupport_fastrtps_c.so
+[7.416s] -- Set non-toolchain portion of runtime path of "/home/acp/programming/rosdock/install/turtlesim_msgs/lib/libturtlesim_msgs__rosidl_typesupport_fastrtps_c.so" to ""
+[7.416s] -- Up-to-date: /home/acp/programming/rosdock/install/turtlesim_msgs/include/turtlesim_msgs/turtlesim_msgs
+[7.416s] -- Up-to-date: /home/acp/programming/rosdock/install/turtlesim_msgs/include/turtlesim_msgs/turtlesim_msgs/action
+[7.416s] -- Up-to-date: /home/acp/programming/rosdock/install/turtlesim_msgs/include/turtlesim_msgs/turtlesim_msgs/action/detail
+[7.416s] -- Installing: /home/acp/programming/rosdock/install/turtlesim_msgs/include/turtlesim_msgs/turtlesim_msgs/action/detail/rotate_absolute__builder.hpp
+[7.416s] -- Installing: /home/acp/programming/rosdock/install/turtlesim_msgs/include/turtlesim_msgs/turtlesim_msgs/action/detail/rotate_absolute__type_support.hpp
+[7.416s] -- Installing: /home/acp/programming/rosdock/install/turtlesim_msgs/include/turtlesim_msgs/turtlesim_msgs/action/detail/rotate_absolute__traits.hpp
+[7.416s] -- Installing: /home/acp/programming/rosdock/install/turtlesim_msgs/include/turtlesim_msgs/turtlesim_msgs/action/detail/rotate_absolute__struct.hpp
+[7.416s] -- Installing: /home/acp/programming/rosdock/install/turtlesim_msgs/include/turtlesim_msgs/turtlesim_msgs/action/rotate_absolute.hpp
+[7.416s] -- Up-to-date: /home/acp/programming/rosdock/install/turtlesim_msgs/include/turtlesim_msgs/turtlesim_msgs/msg
+[7.416s] -- Installing: /home/acp/programming/rosdock/install/turtlesim_msgs/include/turtlesim_msgs/turtlesim_msgs/msg/rosidl_generator_cpp__visibility_control.hpp
+[7.416s] -- Up-to-date: /home/acp/programming/rosdock/install/turtlesim_msgs/include/turtlesim_msgs/turtlesim_msgs/msg/detail
+[7.416s] -- Installing: /home/acp/programming/rosdock/install/turtlesim_msgs/include/turtlesim_msgs/turtlesim_msgs/msg/detail/pose__traits.hpp
+[7.416s] -- Installing: /home/acp/programming/rosdock/install/turtlesim_msgs/include/turtlesim_msgs/turtlesim_msgs/msg/detail/pose__struct.hpp
+[7.416s] -- Installing: /home/acp/programming/rosdock/install/turtlesim_msgs/include/turtlesim_msgs/turtlesim_msgs/msg/detail/pose__type_support.hpp
+[7.416s] -- Installing: /home/acp/programming/rosdock/install/turtlesim_msgs/include/turtlesim_msgs/turtlesim_msgs/msg/detail/color__type_support.hpp
+[7.417s] -- Installing: /home/acp/programming/rosdock/install/turtlesim_msgs/include/turtlesim_msgs/turtlesim_msgs/msg/detail/pose__builder.hpp
+[7.417s] -- Installing: /home/acp/programming/rosdock/install/turtlesim_msgs/include/turtlesim_msgs/turtlesim_msgs/msg/detail/color__traits.hpp
+[7.417s] -- Installing: /home/acp/programming/rosdock/install/turtlesim_msgs/include/turtlesim_msgs/turtlesim_msgs/msg/detail/color__struct.hpp
+[7.417s] -- Installing: /home/acp/programming/rosdock/install/turtlesim_msgs/include/turtlesim_msgs/turtlesim_msgs/msg/detail/color__builder.hpp
+[7.417s] -- Installing: /home/acp/programming/rosdock/install/turtlesim_msgs/include/turtlesim_msgs/turtlesim_msgs/msg/color.hpp
+[7.417s] -- Installing: /home/acp/programming/rosdock/install/turtlesim_msgs/include/turtlesim_msgs/turtlesim_msgs/msg/pose.hpp
+[7.417s] -- Up-to-date: /home/acp/programming/rosdock/install/turtlesim_msgs/include/turtlesim_msgs/turtlesim_msgs/srv
+[7.417s] -- Installing: /home/acp/programming/rosdock/install/turtlesim_msgs/include/turtlesim_msgs/turtlesim_msgs/srv/kill.hpp
+[7.417s] -- Up-to-date: /home/acp/programming/rosdock/install/turtlesim_msgs/include/turtlesim_msgs/turtlesim_msgs/srv/detail
+[7.417s] -- Installing: /home/acp/programming/rosdock/install/turtlesim_msgs/include/turtlesim_msgs/turtlesim_msgs/srv/detail/kill__builder.hpp
+[7.417s] -- Installing: /home/acp/programming/rosdock/install/turtlesim_msgs/include/turtlesim_msgs/turtlesim_msgs/srv/detail/spawn__traits.hpp
+[7.417s] -- Installing: /home/acp/programming/rosdock/install/turtlesim_msgs/include/turtlesim_msgs/turtlesim_msgs/srv/detail/set_pen__traits.hpp
+[7.417s] -- Installing: /home/acp/programming/rosdock/install/turtlesim_msgs/include/turtlesim_msgs/turtlesim_msgs/srv/detail/teleport_absolute__builder.hpp
+[7.418s] -- Installing: /home/acp/programming/rosdock/install/turtlesim_msgs/include/turtlesim_msgs/turtlesim_msgs/srv/detail/teleport_absolute__type_support.hpp
+[7.418s] -- Installing: /home/acp/programming/rosdock/install/turtlesim_msgs/include/turtlesim_msgs/turtlesim_msgs/srv/detail/teleport_absolute__traits.hpp
+[7.418s] -- Installing: /home/acp/programming/rosdock/install/turtlesim_msgs/include/turtlesim_msgs/turtlesim_msgs/srv/detail/set_pen__struct.hpp
+[7.418s] -- Installing: /home/acp/programming/rosdock/install/turtlesim_msgs/include/turtlesim_msgs/turtlesim_msgs/srv/detail/spawn__struct.hpp
+[7.418s] -- Installing: /home/acp/programming/rosdock/install/turtlesim_msgs/include/turtlesim_msgs/turtlesim_msgs/srv/detail/kill__type_support.hpp
+[7.418s] -- Installing: /home/acp/programming/rosdock/install/turtlesim_msgs/include/turtlesim_msgs/turtlesim_msgs/srv/detail/kill__struct.hpp
+[7.418s] -- Installing: /home/acp/programming/rosdock/install/turtlesim_msgs/include/turtlesim_msgs/turtlesim_msgs/srv/detail/teleport_relative__builder.hpp
+[7.418s] -- Installing: /home/acp/programming/rosdock/install/turtlesim_msgs/include/turtlesim_msgs/turtlesim_msgs/srv/detail/set_pen__type_support.hpp
+[7.418s] -- Installing: /home/acp/programming/rosdock/install/turtlesim_msgs/include/turtlesim_msgs/turtlesim_msgs/srv/detail/teleport_relative__type_support.hpp
+[7.418s] -- Installing: /home/acp/programming/rosdock/install/turtlesim_msgs/include/turtlesim_msgs/turtlesim_msgs/srv/detail/spawn__builder.hpp
+[7.418s] -- Installing: /home/acp/programming/rosdock/install/turtlesim_msgs/include/turtlesim_msgs/turtlesim_msgs/srv/detail/kill__traits.hpp
+[7.419s] -- Installing: /home/acp/programming/rosdock/install/turtlesim_msgs/include/turtlesim_msgs/turtlesim_msgs/srv/detail/teleport_absolute__struct.hpp
+[7.419s] -- Installing: /home/acp/programming/rosdock/install/turtlesim_msgs/include/turtlesim_msgs/turtlesim_msgs/srv/detail/spawn__type_support.hpp
+[7.419s] -- Installing: /home/acp/programming/rosdock/install/turtlesim_msgs/include/turtlesim_msgs/turtlesim_msgs/srv/detail/set_pen__builder.hpp
+[7.419s] -- Installing: /home/acp/programming/rosdock/install/turtlesim_msgs/include/turtlesim_msgs/turtlesim_msgs/srv/detail/teleport_relative__traits.hpp
+[7.419s] -- Installing: /home/acp/programming/rosdock/install/turtlesim_msgs/include/turtlesim_msgs/turtlesim_msgs/srv/detail/teleport_relative__struct.hpp
+[7.419s] -- Installing: /home/acp/programming/rosdock/install/turtlesim_msgs/include/turtlesim_msgs/turtlesim_msgs/srv/teleport_absolute.hpp
+[7.419s] -- Installing: /home/acp/programming/rosdock/install/turtlesim_msgs/include/turtlesim_msgs/turtlesim_msgs/srv/teleport_relative.hpp
+[7.419s] -- Installing: /home/acp/programming/rosdock/install/turtlesim_msgs/include/turtlesim_msgs/turtlesim_msgs/srv/spawn.hpp
+[7.419s] -- Installing: /home/acp/programming/rosdock/install/turtlesim_msgs/include/turtlesim_msgs/turtlesim_msgs/srv/set_pen.hpp
+[7.419s] -- Up-to-date: /home/acp/programming/rosdock/install/turtlesim_msgs/include/turtlesim_msgs/turtlesim_msgs
+[7.419s] -- Up-to-date: /home/acp/programming/rosdock/install/turtlesim_msgs/include/turtlesim_msgs/turtlesim_msgs/action
+[7.419s] -- Up-to-date: /home/acp/programming/rosdock/install/turtlesim_msgs/include/turtlesim_msgs/turtlesim_msgs/action/detail
+[7.419s] -- Installing: /home/acp/programming/rosdock/install/turtlesim_msgs/include/turtlesim_msgs/turtlesim_msgs/action/detail/rotate_absolute__rosidl_typesupport_fastrtps_cpp.hpp
+[7.419s] -- Installing: /home/acp/programming/rosdock/install/turtlesim_msgs/include/turtlesim_msgs/turtlesim_msgs/action/detail/dds_fastrtps
+[7.420s] -- Up-to-date: /home/acp/programming/rosdock/install/turtlesim_msgs/include/turtlesim_msgs/turtlesim_msgs/msg
+[7.420s] -- Up-to-date: /home/acp/programming/rosdock/install/turtlesim_msgs/include/turtlesim_msgs/turtlesim_msgs/msg/detail
+[7.420s] -- Installing: /home/acp/programming/rosdock/install/turtlesim_msgs/include/turtlesim_msgs/turtlesim_msgs/msg/detail/color__rosidl_typesupport_fastrtps_cpp.hpp
+[7.420s] -- Installing: /home/acp/programming/rosdock/install/turtlesim_msgs/include/turtlesim_msgs/turtlesim_msgs/msg/detail/pose__rosidl_typesupport_fastrtps_cpp.hpp
+[7.420s] -- Installing: /home/acp/programming/rosdock/install/turtlesim_msgs/include/turtlesim_msgs/turtlesim_msgs/msg/detail/dds_fastrtps
+[7.420s] -- Installing: /home/acp/programming/rosdock/install/turtlesim_msgs/include/turtlesim_msgs/turtlesim_msgs/msg/rosidl_typesupport_fastrtps_cpp__visibility_control.h
+[7.420s] -- Up-to-date: /home/acp/programming/rosdock/install/turtlesim_msgs/include/turtlesim_msgs/turtlesim_msgs/srv
+[7.420s] -- Up-to-date: /home/acp/programming/rosdock/install/turtlesim_msgs/include/turtlesim_msgs/turtlesim_msgs/srv/detail
+[7.420s] -- Installing: /home/acp/programming/rosdock/install/turtlesim_msgs/include/turtlesim_msgs/turtlesim_msgs/srv/detail/teleport_relative__rosidl_typesupport_fastrtps_cpp.hpp
+[7.420s] -- Installing: /home/acp/programming/rosdock/install/turtlesim_msgs/include/turtlesim_msgs/turtlesim_msgs/srv/detail/set_pen__rosidl_typesupport_fastrtps_cpp.hpp
+[7.420s] -- Installing: /home/acp/programming/rosdock/install/turtlesim_msgs/include/turtlesim_msgs/turtlesim_msgs/srv/detail/spawn__rosidl_typesupport_fastrtps_cpp.hpp
+[7.420s] -- Installing: /home/acp/programming/rosdock/install/turtlesim_msgs/include/turtlesim_msgs/turtlesim_msgs/srv/detail/dds_fastrtps
+[7.420s] -- Installing: /home/acp/programming/rosdock/install/turtlesim_msgs/include/turtlesim_msgs/turtlesim_msgs/srv/detail/teleport_absolute__rosidl_typesupport_fastrtps_cpp.hpp
+[7.420s] -- Installing: /home/acp/programming/rosdock/install/turtlesim_msgs/include/turtlesim_msgs/turtlesim_msgs/srv/detail/kill__rosidl_typesupport_fastrtps_cpp.hpp
+[7.420s] -- Installing: /home/acp/programming/rosdock/install/turtlesim_msgs/lib/libturtlesim_msgs__rosidl_typesupport_fastrtps_cpp.so
+[7.421s] -- Set non-toolchain portion of runtime path of "/home/acp/programming/rosdock/install/turtlesim_msgs/lib/libturtlesim_msgs__rosidl_typesupport_fastrtps_cpp.so" to ""
+[7.421s] -- Up-to-date: /home/acp/programming/rosdock/install/turtlesim_msgs/include/turtlesim_msgs/turtlesim_msgs
+[7.421s] -- Up-to-date: /home/acp/programming/rosdock/install/turtlesim_msgs/include/turtlesim_msgs/turtlesim_msgs/action
+[7.421s] -- Up-to-date: /home/acp/programming/rosdock/install/turtlesim_msgs/include/turtlesim_msgs/turtlesim_msgs/action/detail
+[7.422s] -- Installing: /home/acp/programming/rosdock/install/turtlesim_msgs/include/turtlesim_msgs/turtlesim_msgs/action/detail/rotate_absolute__rosidl_typesupport_introspection_c.h
+[7.422s] -- Installing: /home/acp/programming/rosdock/install/turtlesim_msgs/include/turtlesim_msgs/turtlesim_msgs/action/detail/rotate_absolute__type_support.c
+[7.422s] -- Up-to-date: /home/acp/programming/rosdock/install/turtlesim_msgs/include/turtlesim_msgs/turtlesim_msgs/msg
+[7.422s] -- Up-to-date: /home/acp/programming/rosdock/install/turtlesim_msgs/include/turtlesim_msgs/turtlesim_msgs/msg/detail
+[7.422s] -- Installing: /home/acp/programming/rosdock/install/turtlesim_msgs/include/turtlesim_msgs/turtlesim_msgs/msg/detail/color__rosidl_typesupport_introspection_c.h
+[7.422s] -- Installing: /home/acp/programming/rosdock/install/turtlesim_msgs/include/turtlesim_msgs/turtlesim_msgs/msg/detail/color__type_support.c
+[7.422s] -- Installing: /home/acp/programming/rosdock/install/turtlesim_msgs/include/turtlesim_msgs/turtlesim_msgs/msg/detail/pose__rosidl_typesupport_introspection_c.h
+[7.423s] -- Installing: /home/acp/programming/rosdock/install/turtlesim_msgs/include/turtlesim_msgs/turtlesim_msgs/msg/detail/pose__type_support.c
+[7.424s] -- Installing: /home/acp/programming/rosdock/install/turtlesim_msgs/include/turtlesim_msgs/turtlesim_msgs/msg/rosidl_typesupport_introspection_c__visibility_control.h
+[7.424s] -- Up-to-date: /home/acp/programming/rosdock/install/turtlesim_msgs/include/turtlesim_msgs/turtlesim_msgs/srv
+[7.424s] -- Up-to-date: /home/acp/programming/rosdock/install/turtlesim_msgs/include/turtlesim_msgs/turtlesim_msgs/srv/detail
+[7.424s] -- Installing: /home/acp/programming/rosdock/install/turtlesim_msgs/include/turtlesim_msgs/turtlesim_msgs/srv/detail/spawn__type_support.c
+[7.424s] -- Installing: /home/acp/programming/rosdock/install/turtlesim_msgs/include/turtlesim_msgs/turtlesim_msgs/srv/detail/set_pen__type_support.c
+[7.424s] -- Installing: /home/acp/programming/rosdock/install/turtlesim_msgs/include/turtlesim_msgs/turtlesim_msgs/srv/detail/set_pen__rosidl_typesupport_introspection_c.h
+[7.424s] -- Installing: /home/acp/programming/rosdock/install/turtlesim_msgs/include/turtlesim_msgs/turtlesim_msgs/srv/detail/kill__rosidl_typesupport_introspection_c.h
+[7.424s] -- Installing: /home/acp/programming/rosdock/install/turtlesim_msgs/include/turtlesim_msgs/turtlesim_msgs/srv/detail/teleport_absolute__rosidl_typesupport_introspection_c.h
+[7.424s] -- Installing: /home/acp/programming/rosdock/install/turtlesim_msgs/include/turtlesim_msgs/turtlesim_msgs/srv/detail/kill__type_support.c
+[7.425s] -- Installing: /home/acp/programming/rosdock/install/turtlesim_msgs/include/turtlesim_msgs/turtlesim_msgs/srv/detail/teleport_absolute__type_support.c
+[7.425s] -- Installing: /home/acp/programming/rosdock/install/turtlesim_msgs/include/turtlesim_msgs/turtlesim_msgs/srv/detail/teleport_relative__rosidl_typesupport_introspection_c.h
+[7.425s] -- Installing: /home/acp/programming/rosdock/install/turtlesim_msgs/include/turtlesim_msgs/turtlesim_msgs/srv/detail/teleport_relative__type_support.c
+[7.425s] -- Installing: /home/acp/programming/rosdock/install/turtlesim_msgs/include/turtlesim_msgs/turtlesim_msgs/srv/detail/spawn__rosidl_typesupport_introspection_c.h
+[7.425s] -- Installing: /home/acp/programming/rosdock/install/turtlesim_msgs/lib/libturtlesim_msgs__rosidl_typesupport_introspection_c.so
+[7.425s] -- Set non-toolchain portion of runtime path of "/home/acp/programming/rosdock/install/turtlesim_msgs/lib/libturtlesim_msgs__rosidl_typesupport_introspection_c.so" to ""
+[7.425s] -- Installing: /home/acp/programming/rosdock/install/turtlesim_msgs/lib/libturtlesim_msgs__rosidl_typesupport_c.so
+[7.426s] -- Set non-toolchain portion of runtime path of "/home/acp/programming/rosdock/install/turtlesim_msgs/lib/libturtlesim_msgs__rosidl_typesupport_c.so" to ""
+[7.426s] -- Up-to-date: /home/acp/programming/rosdock/install/turtlesim_msgs/include/turtlesim_msgs/turtlesim_msgs
+[7.426s] -- Up-to-date: /home/acp/programming/rosdock/install/turtlesim_msgs/include/turtlesim_msgs/turtlesim_msgs/action
+[7.426s] -- Up-to-date: /home/acp/programming/rosdock/install/turtlesim_msgs/include/turtlesim_msgs/turtlesim_msgs/action/detail
+[7.426s] -- Installing: /home/acp/programming/rosdock/install/turtlesim_msgs/include/turtlesim_msgs/turtlesim_msgs/action/detail/rotate_absolute__type_support.cpp
+[7.426s] -- Installing: /home/acp/programming/rosdock/install/turtlesim_msgs/include/turtlesim_msgs/turtlesim_msgs/action/detail/rotate_absolute__rosidl_typesupport_introspection_cpp.hpp
+[7.426s] -- Up-to-date: /home/acp/programming/rosdock/install/turtlesim_msgs/include/turtlesim_msgs/turtlesim_msgs/msg
+[7.426s] -- Up-to-date: /home/acp/programming/rosdock/install/turtlesim_msgs/include/turtlesim_msgs/turtlesim_msgs/msg/detail
+[7.426s] -- Installing: /home/acp/programming/rosdock/install/turtlesim_msgs/include/turtlesim_msgs/turtlesim_msgs/msg/detail/color__type_support.cpp
+[7.426s] -- Installing: /home/acp/programming/rosdock/install/turtlesim_msgs/include/turtlesim_msgs/turtlesim_msgs/msg/detail/pose__rosidl_typesupport_introspection_cpp.hpp
+[7.426s] -- Installing: /home/acp/programming/rosdock/install/turtlesim_msgs/include/turtlesim_msgs/turtlesim_msgs/msg/detail/color__rosidl_typesupport_introspection_cpp.hpp
+[7.426s] -- Installing: /home/acp/programming/rosdock/install/turtlesim_msgs/include/turtlesim_msgs/turtlesim_msgs/msg/detail/pose__type_support.cpp
+[7.426s] -- Up-to-date: /home/acp/programming/rosdock/install/turtlesim_msgs/include/turtlesim_msgs/turtlesim_msgs/srv
+[7.426s] -- Up-to-date: /home/acp/programming/rosdock/install/turtlesim_msgs/include/turtlesim_msgs/turtlesim_msgs/srv/detail
+[7.426s] -- Installing: /home/acp/programming/rosdock/install/turtlesim_msgs/include/turtlesim_msgs/turtlesim_msgs/srv/detail/teleport_absolute__type_support.cpp
+[7.427s] -- Installing: /home/acp/programming/rosdock/install/turtlesim_msgs/include/turtlesim_msgs/turtlesim_msgs/srv/detail/spawn__type_support.cpp
+[7.427s] -- Installing: /home/acp/programming/rosdock/install/turtlesim_msgs/include/turtlesim_msgs/turtlesim_msgs/srv/detail/set_pen__type_support.cpp
+[7.427s] -- Installing: /home/acp/programming/rosdock/install/turtlesim_msgs/include/turtlesim_msgs/turtlesim_msgs/srv/detail/spawn__rosidl_typesupport_introspection_cpp.hpp
+[7.427s] -- Installing: /home/acp/programming/rosdock/install/turtlesim_msgs/include/turtlesim_msgs/turtlesim_msgs/srv/detail/set_pen__rosidl_typesupport_introspection_cpp.hpp
+[7.427s] -- Installing: /home/acp/programming/rosdock/install/turtlesim_msgs/include/turtlesim_msgs/turtlesim_msgs/srv/detail/teleport_absolute__rosidl_typesupport_introspection_cpp.hpp
+[7.427s] -- Installing: /home/acp/programming/rosdock/install/turtlesim_msgs/include/turtlesim_msgs/turtlesim_msgs/srv/detail/kill__type_support.cpp
+[7.427s] -- Installing: /home/acp/programming/rosdock/install/turtlesim_msgs/include/turtlesim_msgs/turtlesim_msgs/srv/detail/teleport_relative__rosidl_typesupport_introspection_cpp.hpp
+[7.427s] -- Installing: /home/acp/programming/rosdock/install/turtlesim_msgs/include/turtlesim_msgs/turtlesim_msgs/srv/detail/kill__rosidl_typesupport_introspection_cpp.hpp
+[7.427s] -- Installing: /home/acp/programming/rosdock/install/turtlesim_msgs/include/turtlesim_msgs/turtlesim_msgs/srv/detail/teleport_relative__type_support.cpp
+[7.427s] -- Installing: /home/acp/programming/rosdock/install/turtlesim_msgs/lib/libturtlesim_msgs__rosidl_typesupport_introspection_cpp.so
+[7.428s] -- Set non-toolchain portion of runtime path of "/home/acp/programming/rosdock/install/turtlesim_msgs/lib/libturtlesim_msgs__rosidl_typesupport_introspection_cpp.so" to ""
+[7.428s] -- Installing: /home/acp/programming/rosdock/install/turtlesim_msgs/lib/libturtlesim_msgs__rosidl_typesupport_cpp.so
+[7.429s] -- Set non-toolchain portion of runtime path of "/home/acp/programming/rosdock/install/turtlesim_msgs/lib/libturtlesim_msgs__rosidl_typesupport_cpp.so" to ""
+[7.429s] -- Installing: /home/acp/programming/rosdock/install/turtlesim_msgs/share/turtlesim_msgs/environment/pythonpath.sh
+[7.429s] -- Installing: /home/acp/programming/rosdock/install/turtlesim_msgs/share/turtlesim_msgs/environment/pythonpath.dsv
+[7.429s] -- Installing: /home/acp/programming/rosdock/install/turtlesim_msgs/lib/python3.12/site-packages/turtlesim_msgs-1.9.2-py3.12.egg-info
+[7.429s] -- Installing: /home/acp/programming/rosdock/install/turtlesim_msgs/lib/python3.12/site-packages/turtlesim_msgs-1.9.2-py3.12.egg-info/PKG-INFO
+[7.429s] -- Installing: /home/acp/programming/rosdock/install/turtlesim_msgs/lib/python3.12/site-packages/turtlesim_msgs-1.9.2-py3.12.egg-info/SOURCES.txt
+[7.429s] -- Installing: /home/acp/programming/rosdock/install/turtlesim_msgs/lib/python3.12/site-packages/turtlesim_msgs-1.9.2-py3.12.egg-info/top_level.txt
+[7.429s] -- Installing: /home/acp/programming/rosdock/install/turtlesim_msgs/lib/python3.12/site-packages/turtlesim_msgs-1.9.2-py3.12.egg-info/dependency_links.txt
+[7.430s] -- Installing: /home/acp/programming/rosdock/install/turtlesim_msgs/lib/python3.12/site-packages/turtlesim_msgs
+[7.430s] -- Installing: /home/acp/programming/rosdock/install/turtlesim_msgs/lib/python3.12/site-packages/turtlesim_msgs/action
+[7.430s] -- Installing: /home/acp/programming/rosdock/install/turtlesim_msgs/lib/python3.12/site-packages/turtlesim_msgs/action/_rotate_absolute.py
+[7.430s] -- Installing: /home/acp/programming/rosdock/install/turtlesim_msgs/lib/python3.12/site-packages/turtlesim_msgs/action/_rotate_absolute_s.c
+[7.430s] -- Installing: /home/acp/programming/rosdock/install/turtlesim_msgs/lib/python3.12/site-packages/turtlesim_msgs/action/__init__.py
+[7.430s] -- Installing: /home/acp/programming/rosdock/install/turtlesim_msgs/lib/python3.12/site-packages/turtlesim_msgs/turtlesim_msgs_s__rosidl_typesupport_fastrtps_c.so
+[7.430s] -- Installing: /home/acp/programming/rosdock/install/turtlesim_msgs/lib/python3.12/site-packages/turtlesim_msgs/turtlesim_msgs_s__rosidl_typesupport_introspection_c.so
+[7.430s] -- Installing: /home/acp/programming/rosdock/install/turtlesim_msgs/lib/python3.12/site-packages/turtlesim_msgs/msg
+[7.431s] -- Installing: /home/acp/programming/rosdock/install/turtlesim_msgs/lib/python3.12/site-packages/turtlesim_msgs/msg/_pose.py
+[7.431s] -- Installing: /home/acp/programming/rosdock/install/turtlesim_msgs/lib/python3.12/site-packages/turtlesim_msgs/msg/_color_s.c
+[7.431s] -- Installing: /home/acp/programming/rosdock/install/turtlesim_msgs/lib/python3.12/site-packages/turtlesim_msgs/msg/_color.py
+[7.431s] -- Installing: /home/acp/programming/rosdock/install/turtlesim_msgs/lib/python3.12/site-packages/turtlesim_msgs/msg/_pose_s.c
+[7.431s] -- Installing: /home/acp/programming/rosdock/install/turtlesim_msgs/lib/python3.12/site-packages/turtlesim_msgs/msg/__init__.py
+[7.431s] -- Installing: /home/acp/programming/rosdock/install/turtlesim_msgs/lib/python3.12/site-packages/turtlesim_msgs/_turtlesim_msgs_s.ep.rosidl_typesupport_fastrtps_c.c
+[7.431s] -- Installing: /home/acp/programming/rosdock/install/turtlesim_msgs/lib/python3.12/site-packages/turtlesim_msgs/_turtlesim_msgs_s.ep.rosidl_typesupport_c.c
+[7.431s] -- Installing: /home/acp/programming/rosdock/install/turtlesim_msgs/lib/python3.12/site-packages/turtlesim_msgs/srv
+[7.432s] -- Installing: /home/acp/programming/rosdock/install/turtlesim_msgs/lib/python3.12/site-packages/turtlesim_msgs/srv/_kill.py
+[7.432s] -- Installing: /home/acp/programming/rosdock/install/turtlesim_msgs/lib/python3.12/site-packages/turtlesim_msgs/srv/_teleport_relative.py
+[7.432s] -- Installing: /home/acp/programming/rosdock/install/turtlesim_msgs/lib/python3.12/site-packages/turtlesim_msgs/srv/_set_pen_s.c
+[7.432s] -- Installing: /home/acp/programming/rosdock/install/turtlesim_msgs/lib/python3.12/site-packages/turtlesim_msgs/srv/_spawn.py
+[7.432s] -- Installing: /home/acp/programming/rosdock/install/turtlesim_msgs/lib/python3.12/site-packages/turtlesim_msgs/srv/_spawn_s.c
+[7.432s] -- Installing: /home/acp/programming/rosdock/install/turtlesim_msgs/lib/python3.12/site-packages/turtlesim_msgs/srv/_set_pen.py
+[7.432s] -- Installing: /home/acp/programming/rosdock/install/turtlesim_msgs/lib/python3.12/site-packages/turtlesim_msgs/srv/_teleport_absolute.py
+[7.432s] -- Installing: /home/acp/programming/rosdock/install/turtlesim_msgs/lib/python3.12/site-packages/turtlesim_msgs/srv/_kill_s.c
+[7.432s] -- Installing: /home/acp/programming/rosdock/install/turtlesim_msgs/lib/python3.12/site-packages/turtlesim_msgs/srv/_teleport_absolute_s.c
+[7.432s] -- Installing: /home/acp/programming/rosdock/install/turtlesim_msgs/lib/python3.12/site-packages/turtlesim_msgs/srv/_teleport_relative_s.c
+[7.433s] -- Installing: /home/acp/programming/rosdock/install/turtlesim_msgs/lib/python3.12/site-packages/turtlesim_msgs/srv/__init__.py
+[7.433s] -- Installing: /home/acp/programming/rosdock/install/turtlesim_msgs/lib/python3.12/site-packages/turtlesim_msgs/turtlesim_msgs_s__rosidl_typesupport_c.so
+[7.433s] -- Installing: /home/acp/programming/rosdock/install/turtlesim_msgs/lib/python3.12/site-packages/turtlesim_msgs/_turtlesim_msgs_s.ep.rosidl_typesupport_introspection_c.c
+[7.433s] -- Installing: /home/acp/programming/rosdock/install/turtlesim_msgs/lib/python3.12/site-packages/turtlesim_msgs/__init__.py
+[7.486s] Listing '/home/acp/programming/rosdock/install/turtlesim_msgs/lib/python3.12/site-packages/turtlesim_msgs'...
+[7.486s] Compiling '/home/acp/programming/rosdock/install/turtlesim_msgs/lib/python3.12/site-packages/turtlesim_msgs/__init__.py'...
+[7.486s] Listing '/home/acp/programming/rosdock/install/turtlesim_msgs/lib/python3.12/site-packages/turtlesim_msgs/action'...
+[7.486s] Compiling '/home/acp/programming/rosdock/install/turtlesim_msgs/lib/python3.12/site-packages/turtlesim_msgs/action/__init__.py'...
+[7.486s] Compiling '/home/acp/programming/rosdock/install/turtlesim_msgs/lib/python3.12/site-packages/turtlesim_msgs/action/_rotate_absolute.py'...
+[7.486s] Listing '/home/acp/programming/rosdock/install/turtlesim_msgs/lib/python3.12/site-packages/turtlesim_msgs/msg'...
+[7.486s] Compiling '/home/acp/programming/rosdock/install/turtlesim_msgs/lib/python3.12/site-packages/turtlesim_msgs/msg/__init__.py'...
+[7.486s] Compiling '/home/acp/programming/rosdock/install/turtlesim_msgs/lib/python3.12/site-packages/turtlesim_msgs/msg/_color.py'...
+[7.487s] Compiling '/home/acp/programming/rosdock/install/turtlesim_msgs/lib/python3.12/site-packages/turtlesim_msgs/msg/_pose.py'...
+[7.487s] Listing '/home/acp/programming/rosdock/install/turtlesim_msgs/lib/python3.12/site-packages/turtlesim_msgs/srv'...
+[7.487s] Compiling '/home/acp/programming/rosdock/install/turtlesim_msgs/lib/python3.12/site-packages/turtlesim_msgs/srv/__init__.py'...
+[7.487s] Compiling '/home/acp/programming/rosdock/install/turtlesim_msgs/lib/python3.12/site-packages/turtlesim_msgs/srv/_kill.py'...
+[7.487s] Compiling '/home/acp/programming/rosdock/install/turtlesim_msgs/lib/python3.12/site-packages/turtlesim_msgs/srv/_set_pen.py'...
+[7.487s] Compiling '/home/acp/programming/rosdock/install/turtlesim_msgs/lib/python3.12/site-packages/turtlesim_msgs/srv/_spawn.py'...
+[7.487s] Compiling '/home/acp/programming/rosdock/install/turtlesim_msgs/lib/python3.12/site-packages/turtlesim_msgs/srv/_teleport_absolute.py'...
+[7.487s] Compiling '/home/acp/programming/rosdock/install/turtlesim_msgs/lib/python3.12/site-packages/turtlesim_msgs/srv/_teleport_relative.py'...
+[7.490s] -- Installing: /home/acp/programming/rosdock/install/turtlesim_msgs/lib/python3.12/site-packages/turtlesim_msgs/turtlesim_msgs_s__rosidl_typesupport_fastrtps_c.so
+[7.491s] -- Set non-toolchain portion of runtime path of "/home/acp/programming/rosdock/install/turtlesim_msgs/lib/python3.12/site-packages/turtlesim_msgs/turtlesim_msgs_s__rosidl_typesupport_fastrtps_c.so" to ""
+[7.491s] -- Installing: /home/acp/programming/rosdock/install/turtlesim_msgs/lib/python3.12/site-packages/turtlesim_msgs/turtlesim_msgs_s__rosidl_typesupport_introspection_c.so
+[7.491s] -- Set non-toolchain portion of runtime path of "/home/acp/programming/rosdock/install/turtlesim_msgs/lib/python3.12/site-packages/turtlesim_msgs/turtlesim_msgs_s__rosidl_typesupport_introspection_c.so" to ""
+[7.491s] -- Installing: /home/acp/programming/rosdock/install/turtlesim_msgs/lib/python3.12/site-packages/turtlesim_msgs/turtlesim_msgs_s__rosidl_typesupport_c.so
+[7.492s] -- Set non-toolchain portion of runtime path of "/home/acp/programming/rosdock/install/turtlesim_msgs/lib/python3.12/site-packages/turtlesim_msgs/turtlesim_msgs_s__rosidl_typesupport_c.so" to ""
+[7.492s] -- Installing: /home/acp/programming/rosdock/install/turtlesim_msgs/lib/libturtlesim_msgs__rosidl_generator_py.so
+[7.492s] -- Set non-toolchain portion of runtime path of "/home/acp/programming/rosdock/install/turtlesim_msgs/lib/libturtlesim_msgs__rosidl_generator_py.so" to ""
+[7.492s] -- Installing: /home/acp/programming/rosdock/install/turtlesim_msgs/share/turtlesim_msgs/msg/Color.idl
+[7.492s] -- Installing: /home/acp/programming/rosdock/install/turtlesim_msgs/share/turtlesim_msgs/msg/Pose.idl
+[7.492s] -- Installing: /home/acp/programming/rosdock/install/turtlesim_msgs/share/turtlesim_msgs/action/RotateAbsolute.idl
+[7.492s] -- Installing: /home/acp/programming/rosdock/install/turtlesim_msgs/share/turtlesim_msgs/srv/Kill.idl
+[7.493s] -- Installing: /home/acp/programming/rosdock/install/turtlesim_msgs/share/turtlesim_msgs/srv/SetPen.idl
+[7.493s] -- Installing: /home/acp/programming/rosdock/install/turtlesim_msgs/share/turtlesim_msgs/srv/Spawn.idl
+[7.493s] -- Installing: /home/acp/programming/rosdock/install/turtlesim_msgs/share/turtlesim_msgs/srv/TeleportAbsolute.idl
+[7.493s] -- Installing: /home/acp/programming/rosdock/install/turtlesim_msgs/share/turtlesim_msgs/srv/TeleportRelative.idl
+[7.493s] -- Installing: /home/acp/programming/rosdock/install/turtlesim_msgs/share/turtlesim_msgs/msg/Color.msg
+[7.493s] -- Installing: /home/acp/programming/rosdock/install/turtlesim_msgs/share/turtlesim_msgs/msg/Pose.msg
+[7.493s] -- Installing: /home/acp/programming/rosdock/install/turtlesim_msgs/share/turtlesim_msgs/action/RotateAbsolute.action
+[7.493s] -- Installing: /home/acp/programming/rosdock/install/turtlesim_msgs/share/turtlesim_msgs/srv/Kill.srv
+[7.493s] -- Installing: /home/acp/programming/rosdock/install/turtlesim_msgs/share/turtlesim_msgs/srv/SetPen.srv
+[7.494s] -- Installing: /home/acp/programming/rosdock/install/turtlesim_msgs/share/turtlesim_msgs/srv/Spawn.srv
+[7.494s] -- Installing: /home/acp/programming/rosdock/install/turtlesim_msgs/share/turtlesim_msgs/srv/TeleportAbsolute.srv
+[7.494s] -- Installing: /home/acp/programming/rosdock/install/turtlesim_msgs/share/turtlesim_msgs/srv/TeleportRelative.srv
+[7.494s] -- Installing: /home/acp/programming/rosdock/install/turtlesim_msgs/share/ament_index/resource_index/package_run_dependencies/turtlesim_msgs
+[7.494s] -- Installing: /home/acp/programming/rosdock/install/turtlesim_msgs/share/ament_index/resource_index/parent_prefix_path/turtlesim_msgs
+[7.494s] -- Installing: /home/acp/programming/rosdock/install/turtlesim_msgs/share/turtlesim_msgs/environment/ament_prefix_path.sh
+[7.494s] -- Installing: /home/acp/programming/rosdock/install/turtlesim_msgs/share/turtlesim_msgs/environment/ament_prefix_path.dsv
+[7.494s] -- Installing: /home/acp/programming/rosdock/install/turtlesim_msgs/share/turtlesim_msgs/environment/path.sh
+[7.494s] -- Installing: /home/acp/programming/rosdock/install/turtlesim_msgs/share/turtlesim_msgs/environment/path.dsv
+[7.495s] -- Installing: /home/acp/programming/rosdock/install/turtlesim_msgs/share/turtlesim_msgs/local_setup.bash
+[7.495s] -- Installing: /home/acp/programming/rosdock/install/turtlesim_msgs/share/turtlesim_msgs/local_setup.sh
+[7.495s] -- Installing: /home/acp/programming/rosdock/install/turtlesim_msgs/share/turtlesim_msgs/local_setup.zsh
+[7.495s] -- Installing: /home/acp/programming/rosdock/install/turtlesim_msgs/share/turtlesim_msgs/local_setup.dsv
+[7.495s] -- Installing: /home/acp/programming/rosdock/install/turtlesim_msgs/share/turtlesim_msgs/package.dsv
+[7.495s] -- Installing: /home/acp/programming/rosdock/install/turtlesim_msgs/share/ament_index/resource_index/packages/turtlesim_msgs
+[7.495s] -- Installing: /home/acp/programming/rosdock/install/turtlesim_msgs/share/turtlesim_msgs/cmake/export_turtlesim_msgs__rosidl_generator_cExport.cmake
+[7.495s] -- Installing: /home/acp/programming/rosdock/install/turtlesim_msgs/share/turtlesim_msgs/cmake/export_turtlesim_msgs__rosidl_generator_cExport-noconfig.cmake
+[7.496s] -- Installing: /home/acp/programming/rosdock/install/turtlesim_msgs/share/turtlesim_msgs/cmake/export_turtlesim_msgs__rosidl_typesupport_fastrtps_cExport.cmake
+[7.496s] -- Installing: /home/acp/programming/rosdock/install/turtlesim_msgs/share/turtlesim_msgs/cmake/export_turtlesim_msgs__rosidl_typesupport_fastrtps_cExport-noconfig.cmake
+[7.496s] -- Installing: /home/acp/programming/rosdock/install/turtlesim_msgs/share/turtlesim_msgs/cmake/export_turtlesim_msgs__rosidl_generator_cppExport.cmake
+[7.496s] -- Installing: /home/acp/programming/rosdock/install/turtlesim_msgs/share/turtlesim_msgs/cmake/export_turtlesim_msgs__rosidl_typesupport_fastrtps_cppExport.cmake
+[7.496s] -- Installing: /home/acp/programming/rosdock/install/turtlesim_msgs/share/turtlesim_msgs/cmake/export_turtlesim_msgs__rosidl_typesupport_fastrtps_cppExport-noconfig.cmake
+[7.496s] -- Installing: /home/acp/programming/rosdock/install/turtlesim_msgs/share/turtlesim_msgs/cmake/turtlesim_msgs__rosidl_typesupport_introspection_cExport.cmake
+[7.496s] -- Installing: /home/acp/programming/rosdock/install/turtlesim_msgs/share/turtlesim_msgs/cmake/turtlesim_msgs__rosidl_typesupport_introspection_cExport-noconfig.cmake
+[7.496s] -- Installing: /home/acp/programming/rosdock/install/turtlesim_msgs/share/turtlesim_msgs/cmake/turtlesim_msgs__rosidl_typesupport_cExport.cmake
+[7.496s] -- Installing: /home/acp/programming/rosdock/install/turtlesim_msgs/share/turtlesim_msgs/cmake/turtlesim_msgs__rosidl_typesupport_cExport-noconfig.cmake
+[7.497s] -- Installing: /home/acp/programming/rosdock/install/turtlesim_msgs/share/turtlesim_msgs/cmake/turtlesim_msgs__rosidl_typesupport_introspection_cppExport.cmake
+[7.497s] -- Installing: /home/acp/programming/rosdock/install/turtlesim_msgs/share/turtlesim_msgs/cmake/turtlesim_msgs__rosidl_typesupport_introspection_cppExport-noconfig.cmake
+[7.497s] -- Installing: /home/acp/programming/rosdock/install/turtlesim_msgs/share/turtlesim_msgs/cmake/turtlesim_msgs__rosidl_typesupport_cppExport.cmake
+[7.497s] -- Installing: /home/acp/programming/rosdock/install/turtlesim_msgs/share/turtlesim_msgs/cmake/turtlesim_msgs__rosidl_typesupport_cppExport-noconfig.cmake
+[7.497s] -- Installing: /home/acp/programming/rosdock/install/turtlesim_msgs/share/turtlesim_msgs/cmake/export_turtlesim_msgs__rosidl_generator_pyExport.cmake
+[7.497s] -- Installing: /home/acp/programming/rosdock/install/turtlesim_msgs/share/turtlesim_msgs/cmake/export_turtlesim_msgs__rosidl_generator_pyExport-noconfig.cmake
+[7.497s] -- Installing: /home/acp/programming/rosdock/install/turtlesim_msgs/share/turtlesim_msgs/cmake/rosidl_cmake-extras.cmake
+[7.497s] -- Installing: /home/acp/programming/rosdock/install/turtlesim_msgs/share/turtlesim_msgs/cmake/ament_cmake_export_dependencies-extras.cmake
+[7.498s] -- Installing: /home/acp/programming/rosdock/install/turtlesim_msgs/share/turtlesim_msgs/cmake/ament_cmake_export_include_directories-extras.cmake
+[7.498s] -- Installing: /home/acp/programming/rosdock/install/turtlesim_msgs/share/turtlesim_msgs/cmake/ament_cmake_export_libraries-extras.cmake
+[7.498s] -- Installing: /home/acp/programming/rosdock/install/turtlesim_msgs/share/turtlesim_msgs/cmake/ament_cmake_export_targets-extras.cmake
+[7.498s] -- Installing: /home/acp/programming/rosdock/install/turtlesim_msgs/share/turtlesim_msgs/cmake/rosidl_cmake_export_typesupport_targets-extras.cmake
+[7.498s] -- Installing: /home/acp/programming/rosdock/install/turtlesim_msgs/share/turtlesim_msgs/cmake/rosidl_cmake_export_typesupport_libraries-extras.cmake
+[7.498s] -- Installing: /home/acp/programming/rosdock/install/turtlesim_msgs/share/turtlesim_msgs/cmake/turtlesim_msgsConfig.cmake
+[7.498s] -- Installing: /home/acp/programming/rosdock/install/turtlesim_msgs/share/turtlesim_msgs/cmake/turtlesim_msgsConfig-version.cmake
+[7.498s] -- Installing: /home/acp/programming/rosdock/install/turtlesim_msgs/share/turtlesim_msgs/package.xml
+[7.500s] Invoked command in '/home/acp/programming/rosdock/build/turtlesim_msgs' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/rolling DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --install /home/acp/programming/rosdock/build/turtlesim_msgs
