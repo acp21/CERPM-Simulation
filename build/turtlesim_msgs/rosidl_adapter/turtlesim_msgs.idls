@@ -1,8 +1,0 @@
-/home/acp/programming/rosdock/build/turtlesim_msgs/rosidl_adapter/turtlesim_msgs:msg/Color.idl
-/home/acp/programming/rosdock/build/turtlesim_msgs/rosidl_adapter/turtlesim_msgs:msg/Pose.idl
-/home/acp/programming/rosdock/build/turtlesim_msgs/rosidl_adapter/turtlesim_msgs:action/RotateAbsolute.idl
-/home/acp/programming/rosdock/build/turtlesim_msgs/rosidl_adapter/turtlesim_msgs:srv/Kill.idl
-/home/acp/programming/rosdock/build/turtlesim_msgs/rosidl_adapter/turtlesim_msgs:srv/SetPen.idl
-/home/acp/programming/rosdock/build/turtlesim_msgs/rosidl_adapter/turtlesim_msgs:srv/Spawn.idl
-/home/acp/programming/rosdock/build/turtlesim_msgs/rosidl_adapter/turtlesim_msgs:srv/TeleportAbsolute.idl
-/home/acp/programming/rosdock/build/turtlesim_msgs/rosidl_adapter/turtlesim_msgs:srv/TeleportRelative.idl
