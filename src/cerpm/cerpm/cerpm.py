@@ -3,7 +3,7 @@ from rclpy.executors import ExternalShutdownException
 from rclpy.node import Node
 import pandas as pd
 from rclpy.publisher import Publisher
-from std_msgs.msg import String
+from std_msgs.msg import String, Float32MultiArray
 import random
 import time
 
@@ -17,6 +17,7 @@ class Cerpm():
     
     def talk(self):
         msg = String()
+        # TODO: remove before shipping to production
         time.sleep(random.randint(0,2))
         msg_str = f'{self.id}:{self.x}:{self.y}'
         msg.data = msg_str
@@ -29,9 +30,13 @@ class CerpmCluster(Node):
         super().__init__('cerpm')
         self.cerpms: list[Cerpm] = []
         self.timer = self.create_timer(0.5, self.timer_callback)
+        self.broadcast_timer = self.create_timer(0.5, self.broadcast)
+        self.broadcast_publisher = self.create_publisher(Float32MultiArray, 'cerpms/broadcast', 10)
         print('created cerpm_cluster')
-        self.build_cerpm(1, 1, 1)
-        self.build_cerpm(2, 2, 2)
+
+    def broadcast(self):
+        msg
+
 
     def build_cerpm(self, id, x, y):
         publisher_topic = f'cerpms/cerpm_{id}/talk'
@@ -55,7 +60,6 @@ class CerpmCluster(Node):
         print(df)
         for row in df.itertuples(index=True, name='cerpms'):
             print(row)  # Access the entire row
-            print('hi')
             if generate_ids:
                 self.build_cerpm(id, row.x, row.y)
                 id += 1

@@ -3,7 +3,7 @@ from rclpy.executors import ExternalShutdownException
 from rclpy.node import Node
 from rclpy.subscription import Subscription
 
-from std_msgs.msg import String
+from std_msgs.msg import String, Int16
 
 # String rep
 # id:x:y:
@@ -13,28 +13,27 @@ class CerpmListener(Node):
         super().__init__('cerpm_listener')
         self.listening_cerpms: list[Subscription] = []
         self.subscription = self.create_subscription(
-            String,
-            'cerpms/cerpm_1/talk',
-            self.listener_callback,
-            10
-        )
-
-        self.subscription = self.create_subscription(
-            String,
-            'cerpms/cerpm_heard',
+            Int16,
+            'cerpms_detector/cerpm_detected',
             self.heard_callback,
             10
         )
+        
+
+    def mute_cerpm(self, msg):
+        pass
 
     def listener_callback(self, msg):
         self.get_logger().info('I heard %s' % msg.data)
-
-    def heard_callback(self, msg):
         data = msg.data
         split_data = data.split(':')
         id = split_data[0] 
         x = split_data[1]
         y = split_data[2]
+
+    # TODO: Ensure that multiple subscriptions for same topic are not created
+    def heard_callback(self, msg):
+        id = msg.data
         topic = f'cerpms/cerpm_{id}/talk'
         # Create subscription to listen to a given cerpm
         new_subscription = self.create_subscription(String,
