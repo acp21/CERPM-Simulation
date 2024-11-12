@@ -24,7 +24,8 @@ setup(
                 'talker = cerpm.publisher_member_function:main',
                 'listener = py_pubsub.subscriber_member_function:main',
                 'cerpm = cerpm.cerpm:main',
-                'cerpm_listener = cerpm.cerpm_listener:main'
+                'cerpm_listener = cerpm.cerpm_listener:main',
+                'cerpm_detector = cerpm.cerpm_detector:main'
         ],
     },
 )

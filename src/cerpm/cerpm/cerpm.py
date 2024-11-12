@@ -3,9 +3,11 @@ from rclpy.executors import ExternalShutdownException
 from rclpy.node import Node
 import pandas as pd
 from rclpy.publisher import Publisher
-from std_msgs.msg import String, Float32MultiArray
+from rclpy.timer import Timer
+from std_msgs.msg import String
 import random
 import time
+import json
 
 
 class Cerpm():
@@ -29,13 +31,25 @@ class CerpmCluster(Node):
     def __init__(self):
         super().__init__('cerpm')
         self.cerpms: list[Cerpm] = []
-        self.timer = self.create_timer(0.5, self.timer_callback)
-        self.broadcast_timer = self.create_timer(0.5, self.broadcast)
-        self.broadcast_publisher = self.create_publisher(Float32MultiArray, 'cerpms/broadcast', 10)
+        self.timer: Timer = self.create_timer(0.5, self.timer_callback)
+        self.broadcast_timer: Timer = self.create_timer(0.5, self.broadcast)
+        self.broadcast_publisher = self.create_publisher(String, 'cerpms/broadcast', 10)
         print('created cerpm_cluster')
 
     def broadcast(self):
-        msg
+        print('Broadcasting CERPMs')
+        msg = String()
+        cerpm_info = {'cerpms':[]}
+        for cerpm in self.cerpms:
+            cerpm_obj = {
+                'id': cerpm.id,
+                'x': cerpm.x,
+                'y': cerpm.y
+            }
+            cerpm_info['cerpms'].append(cerpm_obj)
+        json_str = json.dumps(cerpm_info)
+        msg.data = json_str
+        self.broadcast_publisher.publish(msg)
 
 
     def build_cerpm(self, id, x, y):
