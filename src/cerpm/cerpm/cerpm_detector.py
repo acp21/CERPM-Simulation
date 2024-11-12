@@ -19,8 +19,8 @@ class CerpmDetector(Node):
         self.create_timer(1,
                           self.update_location)
         self.create_subscription(String, 'cerpms/broadcast', self.update_cerpms, 10)
-        self.create_publisher(UInt16, 'cerpm_detector/in_range', 10)
-        self.create_publisher(UInt16, 'cerpm_detector/out_range', 10)
+        self.in_range_publisher = self.create_publisher(UInt16, 'cerpm_detector/in_range', 10)
+        self.out_range_publisher = self.create_publisher(UInt16, 'cerpm_detector/out_range', 10)
 
     # This will require data from the Carla ROS Bridge
     # May reimplement just for simplicity of early development
@@ -34,10 +34,16 @@ class CerpmDetector(Node):
             cerpm_dict = json.loads(msg.data)
             pp(cerpm_dict)
             for cerpm in cerpm_dict['cerpms']:
+                msg = UInt16()
+                msg.data = cerpm['id']
                 print(cerpm)
                 current_loc = (self.x, self.y)
                 cerpm_loc = (float(cerpm['x']), float(cerpm['y']))
-                self.determine_distance(current_loc, cerpm_loc)
+                distance = self.determine_distance(current_loc, cerpm_loc)
+                if distance <= self.distance_threshold:
+                    self.in_range_publisher.publish(msg)
+                else:
+                    self.out_range_publisher.publish(msg)
             pp(cerpm_dict)
         except Exception as e:
             print(f'{str(e)}')

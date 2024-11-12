@@ -2,8 +2,9 @@ import rclpy
 from rclpy.executors import ExternalShutdownException
 from rclpy.node import Node
 from rclpy.subscription import Subscription
+from math import acos
 
-from std_msgs.msg import String, Int16
+from std_msgs.msg import String, UInt16
 
 # String rep
 # id:x:y:
@@ -13,11 +14,12 @@ class CerpmListener(Node):
         super().__init__('cerpm_listener')
         self.listening_cerpms: list[Subscription] = []
         self.subscription = self.create_subscription(
-            Int16,
-            'cerpms_detector/cerpm_detected',
-            self.heard_callback,
+            UInt16,
+            'cerpm_detector/in_range',
+            self.in_range_callback,
             10
         )
+        self.create_subscription(UInt16, 'cerpm_detector/out_range', self.mute_cerpm, 10)
         
 
     def mute_cerpm(self, msg):
@@ -31,8 +33,11 @@ class CerpmListener(Node):
         x = split_data[1]
         y = split_data[2]
 
+    # def triangle(self, a, b, c):
+
+
     # TODO: Ensure that multiple subscriptions for same topic are not created
-    def heard_callback(self, msg):
+    def in_range_callback(self, msg):
         id = msg.data
         topic = f'cerpms/cerpm_{id}/talk'
         # Create subscription to listen to a given cerpm
@@ -40,7 +45,9 @@ class CerpmListener(Node):
                                                     topic,
                                                     self.listener_callback,
                                                     10)
-
+    def out_range_callback(self, msg):
+        id = msg.data
+        topic = f'/cerpms/cerpm_{id}/talk'
 
 def main(args=None):
     try:
