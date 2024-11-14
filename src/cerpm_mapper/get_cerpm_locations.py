@@ -1,4 +1,5 @@
 import carla
+import csv
 import matplotlib.pyplot as plt
 
 def main():
@@ -15,6 +16,7 @@ def main():
     cerpm_points = carla_map.generate_waypoints(distance=10)
     std_tup = build_waypoints(waypoints)
     cpm_tup = build_waypoints(cerpm_points)
+    write_to_csv(cpm_tup, "cerpm_points.csv")
     plot_points(std_tup, cpm_tup)
 
     # Separate waypoints by lane for visualization
@@ -39,6 +41,14 @@ def build_waypoints(waypoints):
                 right_lane_x.append(right_boundary.transform.location.x)
                 right_lane_y.append(right_boundary.transform.location.y)
     return left_lane_x, left_lane_y
+
+def write_to_csv(data, filename):
+    """Write points to a CSV file."""
+    with open(filename, mode='w', newline='') as file:
+        writer = csv.writer(file)
+        writer.writerow(["x", "y"])  # Header
+        for x, y in zip(data[0], data[1]):
+            writer.writerow([x, y])
 
 def plot_points(waypoints, cpms):
     # Plot lane boundaries as discrete points
