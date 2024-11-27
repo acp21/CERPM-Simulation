@@ -21,7 +21,12 @@ class Cerpm():
         msg = String()
         # TODO: remove before shipping to production
         time.sleep(random.randint(0,2))
-        msg_str = f'{self.id}:{self.x}:{self.y}'
+        msg_json = {
+            'id': self.id,
+            'x': self.x,
+            'y': self.y
+        }
+        msg_str = json.dumps(msg_json)
         msg.data = msg_str
         self.publisher.publish(msg)
         print(f'CERPM {self.id} published talk')

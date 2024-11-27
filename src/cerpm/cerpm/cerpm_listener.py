@@ -3,38 +3,51 @@ from rclpy.executors import ExternalShutdownException
 from rclpy.node import Node
 from rclpy.subscription import Subscription
 from math import acos
+import json
+from queue import Queue
 
 from std_msgs.msg import String, UInt16
 
-# String rep
-# id:x:y:
 
 class CerpmListener(Node):
     def __init__(self):
         super().__init__('cerpm_listener')
         self.listening_cerpms: list[Subscription] = []
+        self.message_queue = Queue(10)
+        self.location: tuple[int, int] = (0, 0) # May be removed, currently for testing
+
+        # Listen for incoming cerpms from cerpm_detector
         self.subscription = self.create_subscription(
             UInt16,
             'cerpm_detector/in_range',
             self.in_range_callback,
             10
         )
+        # Listen for outgoing cerpms from cerpm_detector
         self.create_subscription(UInt16, 'cerpm_detector/out_range', self.mute_cerpm, 10)
         
 
     def mute_cerpm(self, msg):
         pass
 
+
     def listener_callback(self, msg):
         self.get_logger().info('I heard %s' % msg.data)
-        data = msg.data
-        split_data = data.split(':')
-        id = split_data[0] 
-        x = split_data[1]
-        y = split_data[2]
+        # x, y, id
+        data = json.loads(msg.data)
+        x = data['x']
+        y = data['y']
+        id = data['id']
+        
 
     # def triangle(self, a, b, c):
 
+    # get list of all currently subscribed topics
+    def get_listening_topics(self) -> list[str]:
+        topics: list[str] = []
+        for topic in self.listening_cerpms:
+            topics.append(topic.topic)
+        return topics
 
     # TODO: Ensure that multiple subscriptions for same topic are not created
     def in_range_callback(self, msg):
