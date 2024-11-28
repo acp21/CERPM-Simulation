@@ -16,7 +16,7 @@ def main():
     cerpm_points = carla_map.generate_waypoints(distance=10)
     std_tup = build_waypoints(waypoints)
     cpm_tup = build_waypoints(cerpm_points)
-    write_to_csv(cpm_tup, "cerpm_points.csv")
+    write_to_csv(cpm_tup, "cerpm_points2.csv")
     plot_points(std_tup, cpm_tup)
 
     # Separate waypoints by lane for visualization
