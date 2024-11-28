@@ -70,7 +70,6 @@ class CerpmListener(Node):
             topics.append(topic.topic)
         return topics
 
-    # TODO: Ensure that multiple subscriptions for same topic are not created
     def in_range_callback(self, msg):
         id = msg.data
         topic = f'cerpms/cerpm_{id}/talk'
