@@ -95,7 +95,7 @@ def main(args=None):
     try:
         rclpy.init(args=args)
         cerpm_cluster = CerpmCluster()
-        cerpm_cluster.load_cerpms_from_file('new_list.csv', True)
+        cerpm_cluster.load_cerpms_from_file('points_cleaned.csv', True)
         rclpy.spin(cerpm_cluster)
 
     except Exception as e:

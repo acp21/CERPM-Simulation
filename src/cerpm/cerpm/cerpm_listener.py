@@ -19,6 +19,11 @@ class CerpmListener(Node):
         self.message_queue: deque[Any] = deque(maxlen=10)
         self.location: Tuple[int, int] = (0, 0) # May be removed, currently for testing
         self.TIME_DELTA_THRESHOLD = 0.1
+        
+        # These are only used to detect distances between points and vehicle when using carla
+        self.x: float = 0
+        self.y: float = 0
+
 
         # Listen for incoming cerpms from cerpm_detector
         self.subscription = self.create_subscription(
@@ -29,7 +34,13 @@ class CerpmListener(Node):
         )
         # Listen for outgoing cerpms from cerpm_detector
         self.create_subscription(UInt16, 'cerpm_detector/out_range', self.mute_cerpm, 10)
+        self.create_subscription(String, 'cerpms/ego_vehicle_location', self.update_location, 10)
         
+
+    def update_location(self, msg):
+        data = json.loads(msg.data)
+        self.x = data['x']
+        self.y = data['y']
 
     def mute_cerpm(self, msg):
         pass
@@ -73,9 +84,9 @@ class CerpmListener(Node):
             print('Window')
             print(w1['x'], w1['y'])
 
-            d1 = self.determine_distance((0,0), (w1['x'], w1['y']))
-            d2 = self.determine_distance((0,0), (w2['x'], w2['y']))
-            d3 = self.determine_distance((0,0), (w3['x'], w3['y']))
+            d1 = self.determine_distance((self.x, self.y), (w1['x'], w1['y']))
+            d2 = self.determine_distance((self.x, self.y), (w2['x'], w2['y']))
+            d3 = self.determine_distance((self.x, self.y), (w3['x'], w3['y']))
             print(d1, d2, d3)
 
             print()
@@ -90,6 +101,7 @@ class CerpmListener(Node):
                         w3['y'],
                         d3)
             print(f"DETERMINED WE ARE AT POINT {x}, {y}")
+            print(f'ACTUAL LOCATION {self.x}, {self.y}')
 
     def determine_distance(self, p1: Tuple[float, float], p2: Tuple[float, float]):
         point1= np.array(p1)
@@ -160,7 +172,7 @@ def main(args=None):
 
         rclpy.spin(cerpm_listener)
     except (KeyboardInterrupt, ExternalShutdownException):
-        pass
+        print(f'Error: {str(e)}')
 
 
 if __name__ == '__main__':

@@ -17,17 +17,25 @@ class CerpmDetector(Node):
         self.x: float = x
         self.y: float = y
         self.DISTANCE_THRESHOLD = distance_threshold
-        self.create_timer(1,
-                          self.update_location)
+        # self.create_timer(1,
+        #                   self.update_location_randomly)
         self.create_subscription(String, 'cerpms/broadcast', self.update_cerpms, 10)
         self.in_range_publisher = self.create_publisher(UInt16, 'cerpm_detector/in_range', 10)
         self.out_range_publisher = self.create_publisher(UInt16, 'cerpm_detector/out_range', 10)
+        
+        # Only used to determine location
+        self.create_subscription(String, 'cerpms/ego_vehicle_location', self.update_location, 10)
 
     # This will require data from the Carla ROS Bridge
     # May reimplement just for simplicity of early development
-    def update_location(self):
+    def update_location_randomly(self):
         self.x = random.randint(0, 10)
         self.y = random.randint(0, 10)
+
+    def update_location(self, msg):
+            data = json.loads(msg.data)
+            self.x = data['x']
+            self.y = data['y']
 
     # simulate driving around by slowly updating x and y values
     def drive_around(self, direction: String, starting_point: Optional[Tuple[float, float]]=None):
@@ -39,6 +47,7 @@ class CerpmDetector(Node):
         try:
             cerpm_dict = json.loads(msg.data)
             print(f'Got cerpm details for {len(cerpm_dict["cerpms"])} cerpms')
+            print(f'Im at location {self.x}, {self.y}')
             for cerpm in cerpm_dict['cerpms']:
                 msg = UInt16()
                 msg.data = cerpm['id']
