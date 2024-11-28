@@ -11,11 +11,12 @@ import json
 
 
 class Cerpm():
-    def __init__(self, id, x, y, publisher: Publisher[String]) -> None:
+    def __init__(self, id, x, y, publisher) -> None:
         self.id = id
         self.x = x
         self.y = y
-        self.publisher: Publisher[String] = publisher
+        # Publisher object with String message
+        self.publisher = publisher
     
     def talk(self):
         msg = String()
@@ -60,7 +61,7 @@ class CerpmCluster(Node):
 
     def build_cerpm(self, id, x, y):
         publisher_topic = f'cerpms/cerpm_{id}/talk'
-        publisher: Publisher[String] = self.create_publisher(String, publisher_topic, 10)
+        publisher = self.create_publisher(String, publisher_topic, 10)
         cerpm = Cerpm(id, x, y, publisher)
         self.cerpms.append(cerpm)
     
@@ -92,13 +93,13 @@ class CerpmCluster(Node):
 
 def main(args=None):
     try:
-        with rclpy.init(args=args):
-            cerpm_cluster = CerpmCluster()
-            cerpm_cluster.load_cerpms_from_file('new_list.csv', True)
-            rclpy.spin(cerpm_cluster)
+        rclpy.init(args=args)
+        cerpm_cluster = CerpmCluster()
+        cerpm_cluster.load_cerpms_from_file('new_list.csv', True)
+        rclpy.spin(cerpm_cluster)
 
-    except:
-        pass
+    except Exception as e:
+        print(f'Error: {str(e)}')
 
 if __name__ == '__main__':
     main()

@@ -6,7 +6,7 @@ from math import acos
 from copy import deepcopy
 import json
 from collections import deque
-from typing import Any, Optional
+from typing import Any, Optional, Tuple, List
 import numpy as np
 
 from std_msgs.msg import String, UInt16
@@ -15,9 +15,9 @@ from std_msgs.msg import String, UInt16
 class CerpmListener(Node):
     def __init__(self):
         super().__init__('cerpm_listener')
-        self.listening_cerpms: list[Subscription] = []
+        self.listening_cerpms: List[Subscription] = []
         self.message_queue: deque[Any] = deque(maxlen=10)
-        self.location: tuple[int, int] = (0, 0) # May be removed, currently for testing
+        self.location: Tuple[int, int] = (0, 0) # May be removed, currently for testing
         self.TIME_DELTA_THRESHOLD = 0.1
 
         # Listen for incoming cerpms from cerpm_detector
@@ -66,7 +66,7 @@ class CerpmListener(Node):
         # Load message data into queue
         # Remove oldest if full
         self.message_queue.append(msg.data)
-        window: Optional[list[Any]] = self.process_messages()
+        window: Optional[List[Any]] = self.process_messages()
         if window:
             print(window)
             w1, w2, w3 = window
@@ -91,7 +91,7 @@ class CerpmListener(Node):
                         d3)
             print(f"DETERMINED WE ARE AT POINT {x}, {y}")
 
-    def determine_distance(self, p1: tuple[float, float], p2: tuple[float, float]):
+    def determine_distance(self, p1: Tuple[float, float], p2: Tuple[float, float]):
         point1= np.array(p1)
         point2 = np.array(p2)
         distance = np.linalg.norm(point2 - point1)
@@ -99,8 +99,8 @@ class CerpmListener(Node):
         return distance
 
     # get list of all currently subscribed topics
-    def get_listening_topics(self) -> list[str]:
-        topics: list[str] = []
+    def get_listening_topics(self) -> List[str]:
+        topics: List[str] = []
         for topic in self.listening_cerpms:
             topics.append(topic.topic)
         return topics
@@ -155,10 +155,10 @@ def trilaterate(x1, y1, r1, x2, y2, r2, x3, y3, r3):
 
 def main(args=None):
     try:
-        with rclpy.init(args=args):
-            cerpm_listener = CerpmListener()
+        rclpy.init(args=args)
+        cerpm_listener = CerpmListener()
 
-            rclpy.spin(cerpm_listener)
+        rclpy.spin(cerpm_listener)
     except (KeyboardInterrupt, ExternalShutdownException):
         pass
 

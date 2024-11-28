@@ -6,7 +6,7 @@ import json
 from pprint import pp
 import numpy as np
 import random
-from typing import Optional
+from typing import Optional, Tuple
 import argparse
 
 
@@ -30,7 +30,7 @@ class CerpmDetector(Node):
         self.y = random.randint(0, 10)
 
     # simulate driving around by slowly updating x and y values
-    def drive_around(self, direction: String, starting_point: Optional[tuple[float, float]]=None):
+    def drive_around(self, direction: String, starting_point: Optional[Tuple[float, float]]=None):
         if starting_point:
             self.x = starting_point[0]
             self.y = starting_point[1]
@@ -38,7 +38,7 @@ class CerpmDetector(Node):
     def update_cerpms(self, msg):
         try:
             cerpm_dict = json.loads(msg.data)
-            print(f'Got cerpm details for {len(cerpm_dict['cerpms'])} cerpms')
+            print(f'Got cerpm details for {len(cerpm_dict["cerpms"])} cerpms')
             for cerpm in cerpm_dict['cerpms']:
                 msg = UInt16()
                 msg.data = cerpm['id']
@@ -47,7 +47,7 @@ class CerpmDetector(Node):
                 cerpm_loc = (float(cerpm['x']), float(cerpm['y']))
                 distance = self.determine_distance(current_loc, cerpm_loc)
                 if distance <= self.DISTANCE_THRESHOLD:
-                    print(f'Cerpm {cerpm['id']} is in range at {distance} feet. | x: {cerpm['x']} y: {cerpm['y']}')
+                    print(f'Cerpm {cerpm["id"]} is in range at {distance} feet. | x: {cerpm["x"]} y: {cerpm["y"]}')
                     self.in_range_publisher.publish(msg)
                 else:
                     self.out_range_publisher.publish(msg)
@@ -55,7 +55,7 @@ class CerpmDetector(Node):
         except Exception as e:
             print(f'{str(e)}')
     
-    def determine_distance(self, p1: tuple[float, float], p2: tuple[float, float]):
+    def determine_distance(self, p1: Tuple[float, float], p2: Tuple[float, float]):
         point1= np.array(p1)
         point2 = np.array(p2)
         distance = np.linalg.norm(point2 - point1)
@@ -74,11 +74,11 @@ def main(args=None):
     parsed_args = parser.parse_args()
 
     try:
-        with rclpy.init(args=args):
-            cerpm_detector = CerpmDetector(parsed_args.x, parsed_args.y, parsed_args.distance)
-            rclpy.spin(cerpm_detector)
-    except:
-        pass
+        rclpy.init(args=args)
+        cerpm_detector = CerpmDetector(parsed_args.x, parsed_args.y, parsed_args.distance)
+        rclpy.spin(cerpm_detector)
+    except Exception as e:
+        print(f'Exception: {str(e)}')
 
 if __name__ == '__main__':
     main()
