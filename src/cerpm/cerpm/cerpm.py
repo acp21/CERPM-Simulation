@@ -20,11 +20,12 @@ class Cerpm():
     def talk(self):
         msg = String()
         # TODO: remove before shipping to production
-        time.sleep(random.randint(0,2))
+        # time.sleep(random.randint(0,2))
         msg_json = {
             'id': self.id,
             'x': self.x,
-            'y': self.y
+            'y': self.y,
+            'time': time.time()
         }
         msg_str = json.dumps(msg_json)
         msg.data = msg_str
@@ -65,6 +66,7 @@ class CerpmCluster(Node):
     
     def timer_callback(self):
         for cerpm in self.cerpms:
+            # self.get_logger().debug(f'Calling talk for cerpm {cerpm.id}')
             cerpm.talk()
 
     def load_cerpms_from_file(self, file_path: str, generate_ids:bool=False):
@@ -76,15 +78,15 @@ class CerpmCluster(Node):
         except FileNotFoundError:
             print(f'File {file_path} not found!')
         id = 0
-        print(df)
+        # print(df)
         for row in df.itertuples(index=True, name='cerpms'):
-            print(row)  # Access the entire row
+            # print(row)  # Access the entire row
             if generate_ids:
                 self.build_cerpm(id, row.x, row.y)
                 id += 1
             else:
                 self.build_cerpm(row.id, row.x, row.y)
-        print(self.cerpms)
+        # print(self.cerpms)
 
         
 

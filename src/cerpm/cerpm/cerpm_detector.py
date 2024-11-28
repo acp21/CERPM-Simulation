@@ -6,6 +6,7 @@ import json
 from pprint import pp
 import numpy as np
 import random
+from typing import Optional
 
 DISTANCE_THRESHOLD = 10
 
@@ -27,6 +28,12 @@ class CerpmDetector(Node):
     def update_location(self):
         self.x = random.randint(0, 10)
         self.y = random.randint(0, 10)
+
+    # simulate driving around by slowly updating x and y values
+    def drive_around(self, direction: String, starting_point: Optional[tuple[float, float]]=None):
+        if starting_point:
+            self.x = starting_point[0]
+            self.y = starting_point[1]
 
     def update_cerpms(self, msg):
         try:
