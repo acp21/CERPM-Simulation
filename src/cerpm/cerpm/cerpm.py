@@ -30,7 +30,7 @@ class Cerpm():
         msg_str = json.dumps(msg_json)
         msg.data = msg_str
         self.publisher.publish(msg)
-        print(f'CERPM {self.id} published talk')
+        # print(f'CERPM {self.id} published talk')
 
 class CerpmCluster(Node):
 
@@ -94,7 +94,7 @@ def main(args=None):
     try:
         with rclpy.init(args=args):
             cerpm_cluster = CerpmCluster()
-            cerpm_cluster.load_cerpms_from_file('cerpm_list.csv', True)
+            cerpm_cluster.load_cerpms_from_file('new_list.csv', True)
             rclpy.spin(cerpm_cluster)
 
     except:

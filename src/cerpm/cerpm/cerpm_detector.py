@@ -37,21 +37,21 @@ class CerpmDetector(Node):
 
     def update_cerpms(self, msg):
         try:
-            print('Got Cerpm Details')
             cerpm_dict = json.loads(msg.data)
-            pp(cerpm_dict)
+            print(f'Got cerpm details for {len(cerpm_dict['cerpms'])} cerpms')
             for cerpm in cerpm_dict['cerpms']:
                 msg = UInt16()
                 msg.data = cerpm['id']
-                print(cerpm)
+                # print(cerpm)
                 current_loc = (self.x, self.y)
                 cerpm_loc = (float(cerpm['x']), float(cerpm['y']))
                 distance = self.determine_distance(current_loc, cerpm_loc)
                 if distance <= self.DISTANCE_THRESHOLD:
+                    print(f'Cerpm {cerpm['id']} is in range at {distance} feet. | x: {cerpm['x']} y: {cerpm['y']}')
                     self.in_range_publisher.publish(msg)
                 else:
                     self.out_range_publisher.publish(msg)
-            pp(cerpm_dict)
+            # pp(cerpm_dict)
         except Exception as e:
             print(f'{str(e)}')
     
@@ -59,7 +59,7 @@ class CerpmDetector(Node):
         point1= np.array(p1)
         point2 = np.array(p2)
         distance = np.linalg.norm(point2 - point1)
-        print(f'Distance between {point1} and {point2}: {distance}')
+        # print(f'Distance between {point1} and {point2}: {distance}')
         return distance
 
 
@@ -72,7 +72,7 @@ def main(args=None):
     parser.add_argument('--distance', type=float, default=10.0, help='Default distance a cerpm can be detected from')
     parser.add_argument('--debug', action='store_true', help="Enable debug mode (boolean). Default is False.")
     parsed_args = parser.parse_args()
-    
+
     try:
         with rclpy.init(args=args):
             cerpm_detector = CerpmDetector(parsed_args.x, parsed_args.y, parsed_args.distance)
