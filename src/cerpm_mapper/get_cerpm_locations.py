@@ -34,12 +34,12 @@ def build_waypoints(waypoints):
             # Store coordinates for the left boundary
             if left_boundary and left_boundary.lane_type == carla.LaneType.Driving:
                 left_lane_x.append(left_boundary.transform.location.x)
-                left_lane_y.append(left_boundary.transform.location.y)
+                left_lane_y.append(-left_boundary.transform.location.y)  # Invert y here
 
             # Store coordinates for the right boundary
             if right_boundary and right_boundary.lane_type == carla.LaneType.Driving:
                 right_lane_x.append(right_boundary.transform.location.x)
-                right_lane_y.append(right_boundary.transform.location.y)
+                right_lane_y.append(-right_boundary.transform.location.y)  # Invert y here
     return left_lane_x, left_lane_y
 
 def write_to_csv(data, filename):

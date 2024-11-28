@@ -4,6 +4,7 @@ from rclpy.node import Node
 from rclpy.subscription import Subscription
 from math import acos
 from copy import deepcopy
+from pprint import pp
 import json
 from collections import deque
 from typing import Any, Optional, Tuple, List
@@ -43,7 +44,12 @@ class CerpmListener(Node):
         self.y = data['y']
 
     def mute_cerpm(self, msg):
-        pass
+        topic = f'cerpms/cerpm_{msg.data}/talk'
+        # print(topic)
+        for sub in self.subscriptions:
+            if sub.topic == topic:
+                print(f'Unsubscribing from cerpm {msg.data}')
+                self.destroy_subscription(sub)        
 
     def process_messages(self):
         if len(self.message_queue) < 3:
@@ -79,17 +85,17 @@ class CerpmListener(Node):
         self.message_queue.append(msg.data)
         window: Optional[List[Any]] = self.process_messages()
         if window:
-            print(window)
+            # print(window)
             w1, w2, w3 = window
-            print('Window')
-            print(w1['x'], w1['y'])
+            # print('Window')
+            # print(w1['x'], w1['y'])
 
             d1 = self.determine_distance((self.x, self.y), (w1['x'], w1['y']))
             d2 = self.determine_distance((self.x, self.y), (w2['x'], w2['y']))
             d3 = self.determine_distance((self.x, self.y), (w3['x'], w3['y']))
-            print(d1, d2, d3)
+            # print(d1, d2, d3)
 
-            print()
+            # print()
             
             x, y =trilaterate(w1['x'],
                         w1['y'],
@@ -100,8 +106,8 @@ class CerpmListener(Node):
                         w3['x'],
                         w3['y'],
                         d3)
-            print(f"DETERMINED WE ARE AT POINT {x}, {y}")
-            print(f'ACTUAL LOCATION {self.x}, {self.y}')
+            # print(f"DETERMINED WE ARE AT POINT {x}, {y}")
+            # print(f'ACTUAL LOCATION {self.x}, {self.y}')
 
     def determine_distance(self, p1: Tuple[float, float], p2: Tuple[float, float]):
         point1= np.array(p1)
@@ -171,7 +177,7 @@ def main(args=None):
         cerpm_listener = CerpmListener()
 
         rclpy.spin(cerpm_listener)
-    except (KeyboardInterrupt, ExternalShutdownException):
+    except (KeyboardInterrupt, ExternalShutdownException) as e:
         print(f'Error: {str(e)}')
 
 
